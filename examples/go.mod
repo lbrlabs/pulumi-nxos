@@ -1,3 +1,3 @@
-module github.com/lbrlabs/pulumi-iosxe/examples
+module github.com/lbrlabs/pulumi-nxos/examples
 
 go 1.16
