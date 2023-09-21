@@ -1,0 +1,4 @@
+name: nxos-yaml
+runtime: yaml
+config:
+resources: {}
