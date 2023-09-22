@@ -62,6 +62,7 @@ build_dotnet:: DOTNET_VERSION := $(shell pulumictl get version --language dotnet
 build_dotnet:: install_plugins tfgen # build the dotnet sdk
 	pulumictl get version --language dotnet
 	$(WORKING_DIR)/bin/$(TFGEN) dotnet --overlays provider/overlays/dotnet --out sdk/dotnet/
+	awk '/\[System.Diagnostics.CodeAnalysis.SuppressMessage\("Microsoft.Design", "IDE1006", Justification =/ { sub(/\[/, "[global::") } 1' sdk/dotnet/Config/Config.cs > sdk/dotnet/Config/Config.temp && mv sdk/dotnet/Config/Config.temp sdk/dotnet/Config/Config.cs
 	cd sdk/dotnet/ && \
 		echo "${DOTNET_VERSION}" >version.txt && \
         dotnet build /p:Version=${DOTNET_VERSION}

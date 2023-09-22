@@ -11,6 +11,280 @@ import (
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
+type module struct {
+	version semver.Version
+}
+
+func (m *module) Version() semver.Version {
+	return m.version
+}
+
+func (m *module) Construct(ctx *pulumi.Context, name, typ, urn string) (r pulumi.Resource, err error) {
+	switch typ {
+	case "nxos:index/bgp:Bgp":
+		r = &Bgp{}
+	case "nxos:index/bgpAddressFamily:BgpAddressFamily":
+		r = &BgpAddressFamily{}
+	case "nxos:index/bgpAdvertisedPrefix:BgpAdvertisedPrefix":
+		r = &BgpAdvertisedPrefix{}
+	case "nxos:index/bgpGracefulRestart:BgpGracefulRestart":
+		r = &BgpGracefulRestart{}
+	case "nxos:index/bgpInstance:BgpInstance":
+		r = &BgpInstance{}
+	case "nxos:index/bgpPeer:BgpPeer":
+		r = &BgpPeer{}
+	case "nxos:index/bgpPeerAddressFamily:BgpPeerAddressFamily":
+		r = &BgpPeerAddressFamily{}
+	case "nxos:index/bgpPeerAddressFamilyPrefixListControl:BgpPeerAddressFamilyPrefixListControl":
+		r = &BgpPeerAddressFamilyPrefixListControl{}
+	case "nxos:index/bgpPeerAddressFamilyRouteControl:BgpPeerAddressFamilyRouteControl":
+		r = &BgpPeerAddressFamilyRouteControl{}
+	case "nxos:index/bgpPeerTemplate:BgpPeerTemplate":
+		r = &BgpPeerTemplate{}
+	case "nxos:index/bgpPeerTemplateAddressFamily:BgpPeerTemplateAddressFamily":
+		r = &BgpPeerTemplateAddressFamily{}
+	case "nxos:index/bgpPeerTemplateMaxPrefix:BgpPeerTemplateMaxPrefix":
+		r = &BgpPeerTemplateMaxPrefix{}
+	case "nxos:index/bgpRouteControl:BgpRouteControl":
+		r = &BgpRouteControl{}
+	case "nxos:index/bgpVrf:BgpVrf":
+		r = &BgpVrf{}
+	case "nxos:index/bridgeDomain:BridgeDomain":
+		r = &BridgeDomain{}
+	case "nxos:index/defaultQosClassMap:DefaultQosClassMap":
+		r = &DefaultQosClassMap{}
+	case "nxos:index/defaultQosClassMapDscp:DefaultQosClassMapDscp":
+		r = &DefaultQosClassMapDscp{}
+	case "nxos:index/defaultQosPolicyInterfaceIn:DefaultQosPolicyInterfaceIn":
+		r = &DefaultQosPolicyInterfaceIn{}
+	case "nxos:index/defaultQosPolicyInterfaceInPolicyMap:DefaultQosPolicyInterfaceInPolicyMap":
+		r = &DefaultQosPolicyInterfaceInPolicyMap{}
+	case "nxos:index/defaultQosPolicyMap:DefaultQosPolicyMap":
+		r = &DefaultQosPolicyMap{}
+	case "nxos:index/defaultQosPolicyMapMatchClassMap:DefaultQosPolicyMapMatchClassMap":
+		r = &DefaultQosPolicyMapMatchClassMap{}
+	case "nxos:index/defaultQosPolicyMapMatchClassMapPolice:DefaultQosPolicyMapMatchClassMapPolice":
+		r = &DefaultQosPolicyMapMatchClassMapPolice{}
+	case "nxos:index/defaultQosPolicyMapMatchClassMapSetQosGroup:DefaultQosPolicyMapMatchClassMapSetQosGroup":
+		r = &DefaultQosPolicyMapMatchClassMapSetQosGroup{}
+	case "nxos:index/dhcpRelayAddress:DhcpRelayAddress":
+		r = &DhcpRelayAddress{}
+	case "nxos:index/dhcpRelayInterface:DhcpRelayInterface":
+		r = &DhcpRelayInterface{}
+	case "nxos:index/ethernet:Ethernet":
+		r = &Ethernet{}
+	case "nxos:index/evpn:Evpn":
+		r = &Evpn{}
+	case "nxos:index/evpnVni:EvpnVni":
+		r = &EvpnVni{}
+	case "nxos:index/evpnVniRouteTarget:EvpnVniRouteTarget":
+		r = &EvpnVniRouteTarget{}
+	case "nxos:index/evpnVniRouteTargetDirection:EvpnVniRouteTargetDirection":
+		r = &EvpnVniRouteTargetDirection{}
+	case "nxos:index/featureBfd:FeatureBfd":
+		r = &FeatureBfd{}
+	case "nxos:index/featureBgp:FeatureBgp":
+		r = &FeatureBgp{}
+	case "nxos:index/featureDhcp:FeatureDhcp":
+		r = &FeatureDhcp{}
+	case "nxos:index/featureEvpn:FeatureEvpn":
+		r = &FeatureEvpn{}
+	case "nxos:index/featureHmm:FeatureHmm":
+		r = &FeatureHmm{}
+	case "nxos:index/featureHsrp:FeatureHsrp":
+		r = &FeatureHsrp{}
+	case "nxos:index/featureInterfaceVlan:FeatureInterfaceVlan":
+		r = &FeatureInterfaceVlan{}
+	case "nxos:index/featureIsis:FeatureIsis":
+		r = &FeatureIsis{}
+	case "nxos:index/featureLacp:FeatureLacp":
+		r = &FeatureLacp{}
+	case "nxos:index/featureLldp:FeatureLldp":
+		r = &FeatureLldp{}
+	case "nxos:index/featureMacsec:FeatureMacsec":
+		r = &FeatureMacsec{}
+	case "nxos:index/featureNetflow:FeatureNetflow":
+		r = &FeatureNetflow{}
+	case "nxos:index/featureNvOverlay:FeatureNvOverlay":
+		r = &FeatureNvOverlay{}
+	case "nxos:index/featureOspf:FeatureOspf":
+		r = &FeatureOspf{}
+	case "nxos:index/featureOspfv3:FeatureOspfv3":
+		r = &FeatureOspfv3{}
+	case "nxos:index/featurePim:FeaturePim":
+		r = &FeaturePim{}
+	case "nxos:index/featurePtp:FeaturePtp":
+		r = &FeaturePtp{}
+	case "nxos:index/featurePvlan:FeaturePvlan":
+		r = &FeaturePvlan{}
+	case "nxos:index/featureSsh:FeatureSsh":
+		r = &FeatureSsh{}
+	case "nxos:index/featureTacacs:FeatureTacacs":
+		r = &FeatureTacacs{}
+	case "nxos:index/featureTelnet:FeatureTelnet":
+		r = &FeatureTelnet{}
+	case "nxos:index/featureUdld:FeatureUdld":
+		r = &FeatureUdld{}
+	case "nxos:index/featureVnSegment:FeatureVnSegment":
+		r = &FeatureVnSegment{}
+	case "nxos:index/featureVpc:FeatureVpc":
+		r = &FeatureVpc{}
+	case "nxos:index/hmm:Hmm":
+		r = &Hmm{}
+	case "nxos:index/hmmInstance:HmmInstance":
+		r = &HmmInstance{}
+	case "nxos:index/hmmInterface:HmmInterface":
+		r = &HmmInterface{}
+	case "nxos:index/ipv4AccessList:Ipv4AccessList":
+		r = &Ipv4AccessList{}
+	case "nxos:index/ipv4AccessListEntry:Ipv4AccessListEntry":
+		r = &Ipv4AccessListEntry{}
+	case "nxos:index/ipv4AccessListPolicyEgressInterface:Ipv4AccessListPolicyEgressInterface":
+		r = &Ipv4AccessListPolicyEgressInterface{}
+	case "nxos:index/ipv4AccessListPolicyIngressInterface:Ipv4AccessListPolicyIngressInterface":
+		r = &Ipv4AccessListPolicyIngressInterface{}
+	case "nxos:index/ipv4Interface:Ipv4Interface":
+		r = &Ipv4Interface{}
+	case "nxos:index/ipv4InterfaceAddress:Ipv4InterfaceAddress":
+		r = &Ipv4InterfaceAddress{}
+	case "nxos:index/ipv4PrefixListRule:Ipv4PrefixListRule":
+		r = &Ipv4PrefixListRule{}
+	case "nxos:index/ipv4PrefixListRuleEntry:Ipv4PrefixListRuleEntry":
+		r = &Ipv4PrefixListRuleEntry{}
+	case "nxos:index/ipv4StaticRoute:Ipv4StaticRoute":
+		r = &Ipv4StaticRoute{}
+	case "nxos:index/ipv4Vrf:Ipv4Vrf":
+		r = &Ipv4Vrf{}
+	case "nxos:index/isis:Isis":
+		r = &Isis{}
+	case "nxos:index/isisInstance:IsisInstance":
+		r = &IsisInstance{}
+	case "nxos:index/isisInterface:IsisInterface":
+		r = &IsisInterface{}
+	case "nxos:index/isisVrf:IsisVrf":
+		r = &IsisVrf{}
+	case "nxos:index/loopbackInterface:LoopbackInterface":
+		r = &LoopbackInterface{}
+	case "nxos:index/loopbackInterfaceVrf:LoopbackInterfaceVrf":
+		r = &LoopbackInterfaceVrf{}
+	case "nxos:index/ntpServer:NtpServer":
+		r = &NtpServer{}
+	case "nxos:index/nveInterface:NveInterface":
+		r = &NveInterface{}
+	case "nxos:index/nveVni:NveVni":
+		r = &NveVni{}
+	case "nxos:index/nveVniContainer:NveVniContainer":
+		r = &NveVniContainer{}
+	case "nxos:index/nveVniIngressReplication:NveVniIngressReplication":
+		r = &NveVniIngressReplication{}
+	case "nxos:index/ospf:Ospf":
+		r = &Ospf{}
+	case "nxos:index/ospfArea:OspfArea":
+		r = &OspfArea{}
+	case "nxos:index/ospfAuthentication:OspfAuthentication":
+		r = &OspfAuthentication{}
+	case "nxos:index/ospfInstance:OspfInstance":
+		r = &OspfInstance{}
+	case "nxos:index/ospfInterface:OspfInterface":
+		r = &OspfInterface{}
+	case "nxos:index/ospfVrf:OspfVrf":
+		r = &OspfVrf{}
+	case "nxos:index/physicalInterface:PhysicalInterface":
+		r = &PhysicalInterface{}
+	case "nxos:index/physicalInterfaceVrf:PhysicalInterfaceVrf":
+		r = &PhysicalInterfaceVrf{}
+	case "nxos:index/pim:Pim":
+		r = &Pim{}
+	case "nxos:index/pimAnycastRp:PimAnycastRp":
+		r = &PimAnycastRp{}
+	case "nxos:index/pimAnycastRpPeer:PimAnycastRpPeer":
+		r = &PimAnycastRpPeer{}
+	case "nxos:index/pimInstance:PimInstance":
+		r = &PimInstance{}
+	case "nxos:index/pimInterface:PimInterface":
+		r = &PimInterface{}
+	case "nxos:index/pimSsmPolicy:PimSsmPolicy":
+		r = &PimSsmPolicy{}
+	case "nxos:index/pimSsmRange:PimSsmRange":
+		r = &PimSsmRange{}
+	case "nxos:index/pimStaticRp:PimStaticRp":
+		r = &PimStaticRp{}
+	case "nxos:index/pimStaticRpGroupList:PimStaticRpGroupList":
+		r = &PimStaticRpGroupList{}
+	case "nxos:index/pimStaticRpPolicy:PimStaticRpPolicy":
+		r = &PimStaticRpPolicy{}
+	case "nxos:index/pimVrf:PimVrf":
+		r = &PimVrf{}
+	case "nxos:index/portChannelInterface:PortChannelInterface":
+		r = &PortChannelInterface{}
+	case "nxos:index/portChannelInterfaceMember:PortChannelInterfaceMember":
+		r = &PortChannelInterfaceMember{}
+	case "nxos:index/portChannelInterfaceVrf:PortChannelInterfaceVrf":
+		r = &PortChannelInterfaceVrf{}
+	case "nxos:index/queuingQosPolicyMap:QueuingQosPolicyMap":
+		r = &QueuingQosPolicyMap{}
+	case "nxos:index/queuingQosPolicyMapMatchClassMap:QueuingQosPolicyMapMatchClassMap":
+		r = &QueuingQosPolicyMapMatchClassMap{}
+	case "nxos:index/queuingQosPolicyMapMatchClassMapPriority:QueuingQosPolicyMapMatchClassMapPriority":
+		r = &QueuingQosPolicyMapMatchClassMapPriority{}
+	case "nxos:index/queuingQosPolicyMapMatchClassMapRemainingBandwidth:QueuingQosPolicyMapMatchClassMapRemainingBandwidth":
+		r = &QueuingQosPolicyMapMatchClassMapRemainingBandwidth{}
+	case "nxos:index/queuingQosPolicySystemOut:QueuingQosPolicySystemOut":
+		r = &QueuingQosPolicySystemOut{}
+	case "nxos:index/queuingQosPolicySystemOutPolicyMap:QueuingQosPolicySystemOutPolicyMap":
+		r = &QueuingQosPolicySystemOutPolicyMap{}
+	case "nxos:index/rest:Rest":
+		r = &Rest{}
+	case "nxos:index/routeMapRule:RouteMapRule":
+		r = &RouteMapRule{}
+	case "nxos:index/routeMapRuleEntry:RouteMapRuleEntry":
+		r = &RouteMapRuleEntry{}
+	case "nxos:index/routeMapRuleEntryMatchRoute:RouteMapRuleEntryMatchRoute":
+		r = &RouteMapRuleEntryMatchRoute{}
+	case "nxos:index/routeMapRuleEntryMatchRoutePrefixList:RouteMapRuleEntryMatchRoutePrefixList":
+		r = &RouteMapRuleEntryMatchRoutePrefixList{}
+	case "nxos:index/routeMapRuleEntrySetRegularCommunity:RouteMapRuleEntrySetRegularCommunity":
+		r = &RouteMapRuleEntrySetRegularCommunity{}
+	case "nxos:index/routeMapRuleEntrySetRegularCommunityItem:RouteMapRuleEntrySetRegularCommunityItem":
+		r = &RouteMapRuleEntrySetRegularCommunityItem{}
+	case "nxos:index/spanningTreeInterface:SpanningTreeInterface":
+		r = &SpanningTreeInterface{}
+	case "nxos:index/subinterface:Subinterface":
+		r = &Subinterface{}
+	case "nxos:index/subinterfaceVrf:SubinterfaceVrf":
+		r = &SubinterfaceVrf{}
+	case "nxos:index/sviInterface:SviInterface":
+		r = &SviInterface{}
+	case "nxos:index/sviInterfaceVrf:SviInterfaceVrf":
+		r = &SviInterfaceVrf{}
+	case "nxos:index/system:System":
+		r = &System{}
+	case "nxos:index/vpcDomain:VpcDomain":
+		r = &VpcDomain{}
+	case "nxos:index/vpcInstance:VpcInstance":
+		r = &VpcInstance{}
+	case "nxos:index/vpcInterface:VpcInterface":
+		r = &VpcInterface{}
+	case "nxos:index/vrf:Vrf":
+		r = &Vrf{}
+	case "nxos:index/vrfAddressFamily:VrfAddressFamily":
+		r = &VrfAddressFamily{}
+	case "nxos:index/vrfRouteTarget:VrfRouteTarget":
+		r = &VrfRouteTarget{}
+	case "nxos:index/vrfRouteTargetAddressFamily:VrfRouteTargetAddressFamily":
+		r = &VrfRouteTargetAddressFamily{}
+	case "nxos:index/vrfRouteTargetDirection:VrfRouteTargetDirection":
+		r = &VrfRouteTargetDirection{}
+	case "nxos:index/vrfRouting:VrfRouting":
+		r = &VrfRouting{}
+	default:
+		return nil, fmt.Errorf("unknown resource type: %s", typ)
+	}
+
+	err = ctx.RegisterResource(typ, name, nil, r, pulumi.URN_(urn))
+	return
+}
+
 type pkg struct {
 	version semver.Version
 }
@@ -34,6 +308,646 @@ func init() {
 	if err != nil {
 		version = semver.Version{Major: 1}
 	}
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgp",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpAddressFamily",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpAdvertisedPrefix",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpGracefulRestart",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpInstance",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpPeer",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpPeerAddressFamily",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpPeerAddressFamilyPrefixListControl",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpPeerAddressFamilyRouteControl",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpPeerTemplate",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpPeerTemplateAddressFamily",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpPeerTemplateMaxPrefix",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpRouteControl",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bgpVrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/bridgeDomain",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/defaultQosClassMap",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/defaultQosClassMapDscp",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/defaultQosPolicyInterfaceIn",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/defaultQosPolicyInterfaceInPolicyMap",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/defaultQosPolicyMap",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/defaultQosPolicyMapMatchClassMap",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/defaultQosPolicyMapMatchClassMapPolice",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/defaultQosPolicyMapMatchClassMapSetQosGroup",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/dhcpRelayAddress",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/dhcpRelayInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ethernet",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/evpn",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/evpnVni",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/evpnVniRouteTarget",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/evpnVniRouteTargetDirection",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureBfd",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureBgp",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureDhcp",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureEvpn",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureHmm",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureHsrp",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureInterfaceVlan",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureIsis",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureLacp",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureLldp",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureMacsec",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureNetflow",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureNvOverlay",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureOspf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureOspfv3",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featurePim",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featurePtp",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featurePvlan",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureSsh",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureTacacs",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureTelnet",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureUdld",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureVnSegment",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/featureVpc",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/hmm",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/hmmInstance",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/hmmInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ipv4AccessList",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ipv4AccessListEntry",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ipv4AccessListPolicyEgressInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ipv4AccessListPolicyIngressInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ipv4Interface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ipv4InterfaceAddress",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ipv4PrefixListRule",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ipv4PrefixListRuleEntry",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ipv4StaticRoute",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ipv4Vrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/isis",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/isisInstance",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/isisInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/isisVrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/loopbackInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/loopbackInterfaceVrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ntpServer",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/nveInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/nveVni",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/nveVniContainer",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/nveVniIngressReplication",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ospf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ospfArea",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ospfAuthentication",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ospfInstance",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ospfInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/ospfVrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/physicalInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/physicalInterfaceVrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pim",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pimAnycastRp",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pimAnycastRpPeer",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pimInstance",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pimInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pimSsmPolicy",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pimSsmRange",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pimStaticRp",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pimStaticRpGroupList",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pimStaticRpPolicy",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/pimVrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/portChannelInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/portChannelInterfaceMember",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/portChannelInterfaceVrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/queuingQosPolicyMap",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/queuingQosPolicyMapMatchClassMap",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/queuingQosPolicyMapMatchClassMapPriority",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/queuingQosPolicyMapMatchClassMapRemainingBandwidth",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/queuingQosPolicySystemOut",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/queuingQosPolicySystemOutPolicyMap",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/rest",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/routeMapRule",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/routeMapRuleEntry",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/routeMapRuleEntryMatchRoute",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/routeMapRuleEntryMatchRoutePrefixList",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/routeMapRuleEntrySetRegularCommunity",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/routeMapRuleEntrySetRegularCommunityItem",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/spanningTreeInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/subinterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/subinterfaceVrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/sviInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/sviInterfaceVrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/system",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/vpcDomain",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/vpcInstance",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/vpcInterface",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/vrf",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/vrfAddressFamily",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/vrfRouteTarget",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/vrfRouteTargetAddressFamily",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/vrfRouteTargetDirection",
+		&module{version},
+	)
+	pulumi.RegisterResourceModule(
+		"nxos",
+		"index/vrfRouting",
+		&module{version},
+	)
 	pulumi.RegisterResourcePackage(
 		"nxos",
 		&pkg{version},

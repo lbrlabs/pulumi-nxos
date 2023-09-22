@@ -5,27 +5,34 @@ import * as pulumi from "@pulumi/pulumi";
 import * as inputs from "../types/input";
 import * as outputs from "../types/output";
 
+export interface Ipv4StaticRouteNextHop {
+    address: pulumi.Input<string>;
+    description?: pulumi.Input<string>;
+    interfaceId: pulumi.Input<string>;
+    object?: pulumi.Input<number>;
+    preference?: pulumi.Input<number>;
+    tag?: pulumi.Input<number>;
+    vrfName: pulumi.Input<string>;
+}
+
 export interface ProviderDevice {
     name: pulumi.Input<string>;
     url: pulumi.Input<string>;
 }
-export namespace config {
+
+export interface RestChildren {
+    /**
+     * Class name of the child object.
+     */
+    className: pulumi.Input<string>;
+    /**
+     * Map of key-value pairs which represents the attributes of the child object.
+     */
+    content?: pulumi.Input<{[key: string]: pulumi.Input<string>}>;
+    /**
+     * The relative name of the child object.
+     */
+    rn: pulumi.Input<string>;
 }
-
-export namespace nxos {
-    export interface Ipv4StaticRouteNextHop {
-        address: pulumi.Input<string>;
-        description?: pulumi.Input<string>;
-        interfaceId: pulumi.Input<string>;
-        object?: pulumi.Input<number>;
-        preference?: pulumi.Input<number>;
-        tag?: pulumi.Input<number>;
-        vrfName: pulumi.Input<string>;
-    }
-
-    export interface RestChildren {
-        className: pulumi.Input<string>;
-        content?: pulumi.Input<{[key: string]: pulumi.Input<string>}>;
-        rn: pulumi.Input<string>;
-    }
+export namespace config {
 }

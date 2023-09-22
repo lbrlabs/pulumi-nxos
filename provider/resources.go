@@ -5,21 +5,19 @@ import (
 	_ "embed"
 	"fmt"
 	"path/filepath"
-	//"unicode"
 
 	nxos "github.com/CiscoDevNet/terraform-provider-nxos/shim"
 	"github.com/lbrlabs/pulumi-nxos/provider/pkg/version"
 	pf "github.com/pulumi/pulumi-terraform-bridge/pf/tfbridge"
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 	tks "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge/tokens"
-	//"github.com/pulumi/pulumi/sdk/v3/go/common/tokens"
 )
 
 // all of the token components used below.
 const (
 	mainPkg = "nxos"
 	// modules:
-	mainMod = "nxos" // the nxos module
+	mainMod = "index" // the nxos module
 )
 
 //go:embed cmd/pulumi-resource-nxos/bridge-metadata.json
@@ -29,7 +27,7 @@ var metadata []byte
 func Provider() tfbridge.ProviderInfo {
 	info := tfbridge.ProviderInfo{
 		P:                 pf.ShimProvider(nxos.NewProvider()),
-		Name:              "NX-OS",
+		Name:              "nxos",
 		DisplayName:       "Cisco NX-OS",
 		Publisher:         "lbrlabs",
 		LogoURL:           "",
@@ -84,11 +82,11 @@ func Provider() tfbridge.ProviderInfo {
 		},
 	}
 
-	info.MustComputeTokens(tks.SingleModule("nxos_", mainMod, tks.MakeStandard(mainMod)))
+	info.MustComputeTokens(tks.SingleModule("nxos_", mainMod, tks.MakeStandard(mainPkg)))
 
 	info.SetAutonaming(255, "-")
 
-	//info.MustApplyAutoAliases()
+	info.MustApplyAutoAliases()
 
 	return info
 }

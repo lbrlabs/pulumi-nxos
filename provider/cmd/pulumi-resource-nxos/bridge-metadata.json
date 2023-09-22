@@ -1,363 +1,1152 @@
 {
+    "auto-aliasing": {
+        "resources": {
+            "nxos_bgp": {
+                "current": "nxos:index/bgp:Bgp"
+            },
+            "nxos_bgp_address_family": {
+                "current": "nxos:index/bgpAddressFamily:BgpAddressFamily"
+            },
+            "nxos_bgp_advertised_prefix": {
+                "current": "nxos:index/bgpAdvertisedPrefix:BgpAdvertisedPrefix"
+            },
+            "nxos_bgp_graceful_restart": {
+                "current": "nxos:index/bgpGracefulRestart:BgpGracefulRestart"
+            },
+            "nxos_bgp_instance": {
+                "current": "nxos:index/bgpInstance:BgpInstance"
+            },
+            "nxos_bgp_peer": {
+                "current": "nxos:index/bgpPeer:BgpPeer"
+            },
+            "nxos_bgp_peer_address_family": {
+                "current": "nxos:index/bgpPeerAddressFamily:BgpPeerAddressFamily"
+            },
+            "nxos_bgp_peer_address_family_prefix_list_control": {
+                "current": "nxos:index/bgpPeerAddressFamilyPrefixListControl:BgpPeerAddressFamilyPrefixListControl"
+            },
+            "nxos_bgp_peer_address_family_route_control": {
+                "current": "nxos:index/bgpPeerAddressFamilyRouteControl:BgpPeerAddressFamilyRouteControl"
+            },
+            "nxos_bgp_peer_template": {
+                "current": "nxos:index/bgpPeerTemplate:BgpPeerTemplate"
+            },
+            "nxos_bgp_peer_template_address_family": {
+                "current": "nxos:index/bgpPeerTemplateAddressFamily:BgpPeerTemplateAddressFamily"
+            },
+            "nxos_bgp_peer_template_max_prefix": {
+                "current": "nxos:index/bgpPeerTemplateMaxPrefix:BgpPeerTemplateMaxPrefix"
+            },
+            "nxos_bgp_route_control": {
+                "current": "nxos:index/bgpRouteControl:BgpRouteControl"
+            },
+            "nxos_bgp_vrf": {
+                "current": "nxos:index/bgpVrf:BgpVrf"
+            },
+            "nxos_bridge_domain": {
+                "current": "nxos:index/bridgeDomain:BridgeDomain"
+            },
+            "nxos_default_qos_class_map": {
+                "current": "nxos:index/defaultQosClassMap:DefaultQosClassMap"
+            },
+            "nxos_default_qos_class_map_dscp": {
+                "current": "nxos:index/defaultQosClassMapDscp:DefaultQosClassMapDscp"
+            },
+            "nxos_default_qos_policy_interface_in": {
+                "current": "nxos:index/defaultQosPolicyInterfaceIn:DefaultQosPolicyInterfaceIn"
+            },
+            "nxos_default_qos_policy_interface_in_policy_map": {
+                "current": "nxos:index/defaultQosPolicyInterfaceInPolicyMap:DefaultQosPolicyInterfaceInPolicyMap"
+            },
+            "nxos_default_qos_policy_map": {
+                "current": "nxos:index/defaultQosPolicyMap:DefaultQosPolicyMap"
+            },
+            "nxos_default_qos_policy_map_match_class_map": {
+                "current": "nxos:index/defaultQosPolicyMapMatchClassMap:DefaultQosPolicyMapMatchClassMap"
+            },
+            "nxos_default_qos_policy_map_match_class_map_police": {
+                "current": "nxos:index/defaultQosPolicyMapMatchClassMapPolice:DefaultQosPolicyMapMatchClassMapPolice"
+            },
+            "nxos_default_qos_policy_map_match_class_map_set_qos_group": {
+                "current": "nxos:index/defaultQosPolicyMapMatchClassMapSetQosGroup:DefaultQosPolicyMapMatchClassMapSetQosGroup"
+            },
+            "nxos_dhcp_relay_address": {
+                "current": "nxos:index/dhcpRelayAddress:DhcpRelayAddress"
+            },
+            "nxos_dhcp_relay_interface": {
+                "current": "nxos:index/dhcpRelayInterface:DhcpRelayInterface"
+            },
+            "nxos_ethernet": {
+                "current": "nxos:index/ethernet:Ethernet"
+            },
+            "nxos_evpn": {
+                "current": "nxos:index/evpn:Evpn"
+            },
+            "nxos_evpn_vni": {
+                "current": "nxos:index/evpnVni:EvpnVni"
+            },
+            "nxos_evpn_vni_route_target": {
+                "current": "nxos:index/evpnVniRouteTarget:EvpnVniRouteTarget"
+            },
+            "nxos_evpn_vni_route_target_direction": {
+                "current": "nxos:index/evpnVniRouteTargetDirection:EvpnVniRouteTargetDirection"
+            },
+            "nxos_feature_bfd": {
+                "current": "nxos:index/featureBfd:FeatureBfd"
+            },
+            "nxos_feature_bgp": {
+                "current": "nxos:index/featureBgp:FeatureBgp"
+            },
+            "nxos_feature_dhcp": {
+                "current": "nxos:index/featureDhcp:FeatureDhcp"
+            },
+            "nxos_feature_evpn": {
+                "current": "nxos:index/featureEvpn:FeatureEvpn"
+            },
+            "nxos_feature_hmm": {
+                "current": "nxos:index/featureHmm:FeatureHmm"
+            },
+            "nxos_feature_hsrp": {
+                "current": "nxos:index/featureHsrp:FeatureHsrp"
+            },
+            "nxos_feature_interface_vlan": {
+                "current": "nxos:index/featureInterfaceVlan:FeatureInterfaceVlan"
+            },
+            "nxos_feature_isis": {
+                "current": "nxos:index/featureIsis:FeatureIsis"
+            },
+            "nxos_feature_lacp": {
+                "current": "nxos:index/featureLacp:FeatureLacp"
+            },
+            "nxos_feature_lldp": {
+                "current": "nxos:index/featureLldp:FeatureLldp"
+            },
+            "nxos_feature_macsec": {
+                "current": "nxos:index/featureMacsec:FeatureMacsec"
+            },
+            "nxos_feature_netflow": {
+                "current": "nxos:index/featureNetflow:FeatureNetflow"
+            },
+            "nxos_feature_nv_overlay": {
+                "current": "nxos:index/featureNvOverlay:FeatureNvOverlay"
+            },
+            "nxos_feature_ospf": {
+                "current": "nxos:index/featureOspf:FeatureOspf"
+            },
+            "nxos_feature_ospfv3": {
+                "current": "nxos:index/featureOspfv3:FeatureOspfv3"
+            },
+            "nxos_feature_pim": {
+                "current": "nxos:index/featurePim:FeaturePim"
+            },
+            "nxos_feature_ptp": {
+                "current": "nxos:index/featurePtp:FeaturePtp"
+            },
+            "nxos_feature_pvlan": {
+                "current": "nxos:index/featurePvlan:FeaturePvlan"
+            },
+            "nxos_feature_ssh": {
+                "current": "nxos:index/featureSsh:FeatureSsh"
+            },
+            "nxos_feature_tacacs": {
+                "current": "nxos:index/featureTacacs:FeatureTacacs"
+            },
+            "nxos_feature_telnet": {
+                "current": "nxos:index/featureTelnet:FeatureTelnet"
+            },
+            "nxos_feature_udld": {
+                "current": "nxos:index/featureUdld:FeatureUdld"
+            },
+            "nxos_feature_vn_segment": {
+                "current": "nxos:index/featureVnSegment:FeatureVnSegment"
+            },
+            "nxos_feature_vpc": {
+                "current": "nxos:index/featureVpc:FeatureVpc"
+            },
+            "nxos_hmm": {
+                "current": "nxos:index/hmm:Hmm"
+            },
+            "nxos_hmm_instance": {
+                "current": "nxos:index/hmmInstance:HmmInstance"
+            },
+            "nxos_hmm_interface": {
+                "current": "nxos:index/hmmInterface:HmmInterface"
+            },
+            "nxos_ipv4_access_list": {
+                "current": "nxos:index/ipv4AccessList:Ipv4AccessList"
+            },
+            "nxos_ipv4_access_list_entry": {
+                "current": "nxos:index/ipv4AccessListEntry:Ipv4AccessListEntry"
+            },
+            "nxos_ipv4_access_list_policy_egress_interface": {
+                "current": "nxos:index/ipv4AccessListPolicyEgressInterface:Ipv4AccessListPolicyEgressInterface"
+            },
+            "nxos_ipv4_access_list_policy_ingress_interface": {
+                "current": "nxos:index/ipv4AccessListPolicyIngressInterface:Ipv4AccessListPolicyIngressInterface"
+            },
+            "nxos_ipv4_interface": {
+                "current": "nxos:index/ipv4Interface:Ipv4Interface"
+            },
+            "nxos_ipv4_interface_address": {
+                "current": "nxos:index/ipv4InterfaceAddress:Ipv4InterfaceAddress"
+            },
+            "nxos_ipv4_prefix_list_rule": {
+                "current": "nxos:index/ipv4PrefixListRule:Ipv4PrefixListRule"
+            },
+            "nxos_ipv4_prefix_list_rule_entry": {
+                "current": "nxos:index/ipv4PrefixListRuleEntry:Ipv4PrefixListRuleEntry"
+            },
+            "nxos_ipv4_static_route": {
+                "current": "nxos:index/ipv4StaticRoute:Ipv4StaticRoute",
+                "fields": {
+                    "next_hops": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "nxos_ipv4_vrf": {
+                "current": "nxos:index/ipv4Vrf:Ipv4Vrf"
+            },
+            "nxos_isis": {
+                "current": "nxos:index/isis:Isis"
+            },
+            "nxos_isis_instance": {
+                "current": "nxos:index/isisInstance:IsisInstance"
+            },
+            "nxos_isis_interface": {
+                "current": "nxos:index/isisInterface:IsisInterface"
+            },
+            "nxos_isis_vrf": {
+                "current": "nxos:index/isisVrf:IsisVrf"
+            },
+            "nxos_loopback_interface": {
+                "current": "nxos:index/loopbackInterface:LoopbackInterface"
+            },
+            "nxos_loopback_interface_vrf": {
+                "current": "nxos:index/loopbackInterfaceVrf:LoopbackInterfaceVrf"
+            },
+            "nxos_ntp_server": {
+                "current": "nxos:index/ntpServer:NtpServer"
+            },
+            "nxos_nve_interface": {
+                "current": "nxos:index/nveInterface:NveInterface"
+            },
+            "nxos_nve_vni": {
+                "current": "nxos:index/nveVni:NveVni"
+            },
+            "nxos_nve_vni_container": {
+                "current": "nxos:index/nveVniContainer:NveVniContainer"
+            },
+            "nxos_nve_vni_ingress_replication": {
+                "current": "nxos:index/nveVniIngressReplication:NveVniIngressReplication"
+            },
+            "nxos_ospf": {
+                "current": "nxos:index/ospf:Ospf"
+            },
+            "nxos_ospf_area": {
+                "current": "nxos:index/ospfArea:OspfArea"
+            },
+            "nxos_ospf_authentication": {
+                "current": "nxos:index/ospfAuthentication:OspfAuthentication"
+            },
+            "nxos_ospf_instance": {
+                "current": "nxos:index/ospfInstance:OspfInstance"
+            },
+            "nxos_ospf_interface": {
+                "current": "nxos:index/ospfInterface:OspfInterface"
+            },
+            "nxos_ospf_vrf": {
+                "current": "nxos:index/ospfVrf:OspfVrf"
+            },
+            "nxos_physical_interface": {
+                "current": "nxos:index/physicalInterface:PhysicalInterface"
+            },
+            "nxos_physical_interface_vrf": {
+                "current": "nxos:index/physicalInterfaceVrf:PhysicalInterfaceVrf"
+            },
+            "nxos_pim": {
+                "current": "nxos:index/pim:Pim"
+            },
+            "nxos_pim_anycast_rp": {
+                "current": "nxos:index/pimAnycastRp:PimAnycastRp"
+            },
+            "nxos_pim_anycast_rp_peer": {
+                "current": "nxos:index/pimAnycastRpPeer:PimAnycastRpPeer"
+            },
+            "nxos_pim_instance": {
+                "current": "nxos:index/pimInstance:PimInstance"
+            },
+            "nxos_pim_interface": {
+                "current": "nxos:index/pimInterface:PimInterface"
+            },
+            "nxos_pim_ssm_policy": {
+                "current": "nxos:index/pimSsmPolicy:PimSsmPolicy"
+            },
+            "nxos_pim_ssm_range": {
+                "current": "nxos:index/pimSsmRange:PimSsmRange"
+            },
+            "nxos_pim_static_rp": {
+                "current": "nxos:index/pimStaticRp:PimStaticRp"
+            },
+            "nxos_pim_static_rp_group_list": {
+                "current": "nxos:index/pimStaticRpGroupList:PimStaticRpGroupList"
+            },
+            "nxos_pim_static_rp_policy": {
+                "current": "nxos:index/pimStaticRpPolicy:PimStaticRpPolicy"
+            },
+            "nxos_pim_vrf": {
+                "current": "nxos:index/pimVrf:PimVrf"
+            },
+            "nxos_port_channel_interface": {
+                "current": "nxos:index/portChannelInterface:PortChannelInterface"
+            },
+            "nxos_port_channel_interface_member": {
+                "current": "nxos:index/portChannelInterfaceMember:PortChannelInterfaceMember"
+            },
+            "nxos_port_channel_interface_vrf": {
+                "current": "nxos:index/portChannelInterfaceVrf:PortChannelInterfaceVrf"
+            },
+            "nxos_queuing_qos_policy_map": {
+                "current": "nxos:index/queuingQosPolicyMap:QueuingQosPolicyMap"
+            },
+            "nxos_queuing_qos_policy_map_match_class_map": {
+                "current": "nxos:index/queuingQosPolicyMapMatchClassMap:QueuingQosPolicyMapMatchClassMap"
+            },
+            "nxos_queuing_qos_policy_map_match_class_map_priority": {
+                "current": "nxos:index/queuingQosPolicyMapMatchClassMapPriority:QueuingQosPolicyMapMatchClassMapPriority"
+            },
+            "nxos_queuing_qos_policy_map_match_class_map_remaining_bandwidth": {
+                "current": "nxos:index/queuingQosPolicyMapMatchClassMapRemainingBandwidth:QueuingQosPolicyMapMatchClassMapRemainingBandwidth"
+            },
+            "nxos_queuing_qos_policy_system_out": {
+                "current": "nxos:index/queuingQosPolicySystemOut:QueuingQosPolicySystemOut"
+            },
+            "nxos_queuing_qos_policy_system_out_policy_map": {
+                "current": "nxos:index/queuingQosPolicySystemOutPolicyMap:QueuingQosPolicySystemOutPolicyMap"
+            },
+            "nxos_rest": {
+                "current": "nxos:index/rest:Rest",
+                "fields": {
+                    "children": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "nxos_route_map_rule": {
+                "current": "nxos:index/routeMapRule:RouteMapRule"
+            },
+            "nxos_route_map_rule_entry": {
+                "current": "nxos:index/routeMapRuleEntry:RouteMapRuleEntry"
+            },
+            "nxos_route_map_rule_entry_match_route": {
+                "current": "nxos:index/routeMapRuleEntryMatchRoute:RouteMapRuleEntryMatchRoute"
+            },
+            "nxos_route_map_rule_entry_match_route_prefix_list": {
+                "current": "nxos:index/routeMapRuleEntryMatchRoutePrefixList:RouteMapRuleEntryMatchRoutePrefixList"
+            },
+            "nxos_route_map_rule_entry_set_regular_community": {
+                "current": "nxos:index/routeMapRuleEntrySetRegularCommunity:RouteMapRuleEntrySetRegularCommunity"
+            },
+            "nxos_route_map_rule_entry_set_regular_community_item": {
+                "current": "nxos:index/routeMapRuleEntrySetRegularCommunityItem:RouteMapRuleEntrySetRegularCommunityItem"
+            },
+            "nxos_spanning_tree_interface": {
+                "current": "nxos:index/spanningTreeInterface:SpanningTreeInterface"
+            },
+            "nxos_subinterface": {
+                "current": "nxos:index/subinterface:Subinterface"
+            },
+            "nxos_subinterface_vrf": {
+                "current": "nxos:index/subinterfaceVrf:SubinterfaceVrf"
+            },
+            "nxos_svi_interface": {
+                "current": "nxos:index/sviInterface:SviInterface"
+            },
+            "nxos_svi_interface_vrf": {
+                "current": "nxos:index/sviInterfaceVrf:SviInterfaceVrf"
+            },
+            "nxos_system": {
+                "current": "nxos:index/system:System"
+            },
+            "nxos_vpc_domain": {
+                "current": "nxos:index/vpcDomain:VpcDomain"
+            },
+            "nxos_vpc_instance": {
+                "current": "nxos:index/vpcInstance:VpcInstance"
+            },
+            "nxos_vpc_interface": {
+                "current": "nxos:index/vpcInterface:VpcInterface"
+            },
+            "nxos_vrf": {
+                "current": "nxos:index/vrf:Vrf"
+            },
+            "nxos_vrf_address_family": {
+                "current": "nxos:index/vrfAddressFamily:VrfAddressFamily"
+            },
+            "nxos_vrf_route_target": {
+                "current": "nxos:index/vrfRouteTarget:VrfRouteTarget"
+            },
+            "nxos_vrf_route_target_address_family": {
+                "current": "nxos:index/vrfRouteTargetAddressFamily:VrfRouteTargetAddressFamily"
+            },
+            "nxos_vrf_route_target_direction": {
+                "current": "nxos:index/vrfRouteTargetDirection:VrfRouteTargetDirection"
+            },
+            "nxos_vrf_routing": {
+                "current": "nxos:index/vrfRouting:VrfRouting"
+            }
+        },
+        "datasources": {
+            "nxos_bgp": {
+                "current": "nxos:index/getBgp:getBgp"
+            },
+            "nxos_bgp_address_family": {
+                "current": "nxos:index/getBgpAddressFamily:getBgpAddressFamily"
+            },
+            "nxos_bgp_advertised_prefix": {
+                "current": "nxos:index/getBgpAdvertisedPrefix:getBgpAdvertisedPrefix"
+            },
+            "nxos_bgp_graceful_restart": {
+                "current": "nxos:index/getBgpGracefulRestart:getBgpGracefulRestart"
+            },
+            "nxos_bgp_instance": {
+                "current": "nxos:index/getBgpInstance:getBgpInstance"
+            },
+            "nxos_bgp_peer": {
+                "current": "nxos:index/getBgpPeer:getBgpPeer"
+            },
+            "nxos_bgp_peer_address_family": {
+                "current": "nxos:index/getBgpPeerAddressFamily:getBgpPeerAddressFamily"
+            },
+            "nxos_bgp_peer_address_family_prefix_list_control": {
+                "current": "nxos:index/getBgpPeerAddressFamilyPrefixListControl:getBgpPeerAddressFamilyPrefixListControl"
+            },
+            "nxos_bgp_peer_address_family_route_control": {
+                "current": "nxos:index/getBgpPeerAddressFamilyRouteControl:getBgpPeerAddressFamilyRouteControl"
+            },
+            "nxos_bgp_peer_template": {
+                "current": "nxos:index/getBgpPeerTemplate:getBgpPeerTemplate"
+            },
+            "nxos_bgp_peer_template_address_family": {
+                "current": "nxos:index/getBgpPeerTemplateAddressFamily:getBgpPeerTemplateAddressFamily"
+            },
+            "nxos_bgp_peer_template_max_prefix": {
+                "current": "nxos:index/getBgpPeerTemplateMaxPrefix:getBgpPeerTemplateMaxPrefix"
+            },
+            "nxos_bgp_route_control": {
+                "current": "nxos:index/getBgpRouteControl:getBgpRouteControl"
+            },
+            "nxos_bgp_vrf": {
+                "current": "nxos:index/getBgpVrf:getBgpVrf"
+            },
+            "nxos_bridge_domain": {
+                "current": "nxos:index/getBridgeDomain:getBridgeDomain"
+            },
+            "nxos_default_qos_class_map": {
+                "current": "nxos:index/getDefaultQosClassMap:getDefaultQosClassMap"
+            },
+            "nxos_default_qos_class_map_dscp": {
+                "current": "nxos:index/getDefaultQosClassMapDscp:getDefaultQosClassMapDscp"
+            },
+            "nxos_default_qos_policy_interface_in": {
+                "current": "nxos:index/getDefaultQosPolicyInterfaceIn:getDefaultQosPolicyInterfaceIn"
+            },
+            "nxos_default_qos_policy_interface_in_policy_map": {
+                "current": "nxos:index/getDefaultQosPolicyInterfaceInPolicyMap:getDefaultQosPolicyInterfaceInPolicyMap"
+            },
+            "nxos_default_qos_policy_map": {
+                "current": "nxos:index/getDefaultQosPolicyMap:getDefaultQosPolicyMap"
+            },
+            "nxos_default_qos_policy_map_match_class_map": {
+                "current": "nxos:index/getDefaultQosPolicyMapMatchClassMap:getDefaultQosPolicyMapMatchClassMap"
+            },
+            "nxos_default_qos_policy_map_match_class_map_police": {
+                "current": "nxos:index/getDefaultQosPolicyMapMatchClassMapPolice:getDefaultQosPolicyMapMatchClassMapPolice"
+            },
+            "nxos_default_qos_policy_map_match_class_map_set_qos_group": {
+                "current": "nxos:index/getDefaultQosPolicyMapMatchClassMapSetQosGroup:getDefaultQosPolicyMapMatchClassMapSetQosGroup"
+            },
+            "nxos_dhcp_relay_address": {
+                "current": "nxos:index/getDhcpRelayAddress:getDhcpRelayAddress"
+            },
+            "nxos_dhcp_relay_interface": {
+                "current": "nxos:index/getDhcpRelayInterface:getDhcpRelayInterface"
+            },
+            "nxos_ethernet": {
+                "current": "nxos:index/getEthernet:getEthernet"
+            },
+            "nxos_evpn": {
+                "current": "nxos:index/getEvpn:getEvpn"
+            },
+            "nxos_evpn_vni": {
+                "current": "nxos:index/getEvpnVni:getEvpnVni"
+            },
+            "nxos_evpn_vni_route_target": {
+                "current": "nxos:index/getEvpnVniRouteTarget:getEvpnVniRouteTarget"
+            },
+            "nxos_evpn_vni_route_target_direction": {
+                "current": "nxos:index/getEvpnVniRouteTargetDirection:getEvpnVniRouteTargetDirection"
+            },
+            "nxos_feature_bfd": {
+                "current": "nxos:index/getFeatureBfd:getFeatureBfd"
+            },
+            "nxos_feature_bgp": {
+                "current": "nxos:index/getFeatureBgp:getFeatureBgp"
+            },
+            "nxos_feature_dhcp": {
+                "current": "nxos:index/getFeatureDhcp:getFeatureDhcp"
+            },
+            "nxos_feature_evpn": {
+                "current": "nxos:index/getFeatureEvpn:getFeatureEvpn"
+            },
+            "nxos_feature_hmm": {
+                "current": "nxos:index/getFeatureHmm:getFeatureHmm"
+            },
+            "nxos_feature_hsrp": {
+                "current": "nxos:index/getFeatureHsrp:getFeatureHsrp"
+            },
+            "nxos_feature_interface_vlan": {
+                "current": "nxos:index/getFeatureInterfaceVlan:getFeatureInterfaceVlan"
+            },
+            "nxos_feature_isis": {
+                "current": "nxos:index/getFeatureIsis:getFeatureIsis"
+            },
+            "nxos_feature_lacp": {
+                "current": "nxos:index/getFeatureLacp:getFeatureLacp"
+            },
+            "nxos_feature_lldp": {
+                "current": "nxos:index/getFeatureLldp:getFeatureLldp"
+            },
+            "nxos_feature_macsec": {
+                "current": "nxos:index/getFeatureMacsec:getFeatureMacsec"
+            },
+            "nxos_feature_netflow": {
+                "current": "nxos:index/getFeatureNetflow:getFeatureNetflow"
+            },
+            "nxos_feature_nv_overlay": {
+                "current": "nxos:index/getFeatureNvOverlay:getFeatureNvOverlay"
+            },
+            "nxos_feature_ospf": {
+                "current": "nxos:index/getFeatureOspf:getFeatureOspf"
+            },
+            "nxos_feature_ospfv3": {
+                "current": "nxos:index/getFeatureOspfv3:getFeatureOspfv3"
+            },
+            "nxos_feature_pim": {
+                "current": "nxos:index/getFeaturePim:getFeaturePim"
+            },
+            "nxos_feature_ptp": {
+                "current": "nxos:index/getFeaturePtp:getFeaturePtp"
+            },
+            "nxos_feature_pvlan": {
+                "current": "nxos:index/getFeaturePvlan:getFeaturePvlan"
+            },
+            "nxos_feature_ssh": {
+                "current": "nxos:index/getFeatureSsh:getFeatureSsh"
+            },
+            "nxos_feature_tacacs": {
+                "current": "nxos:index/getFeatureTacacs:getFeatureTacacs"
+            },
+            "nxos_feature_telnet": {
+                "current": "nxos:index/getFeatureTelnet:getFeatureTelnet"
+            },
+            "nxos_feature_udld": {
+                "current": "nxos:index/getFeatureUdld:getFeatureUdld"
+            },
+            "nxos_feature_vn_segment": {
+                "current": "nxos:index/getFeatureVnSegment:getFeatureVnSegment"
+            },
+            "nxos_feature_vpc": {
+                "current": "nxos:index/getFeatureVpc:getFeatureVpc"
+            },
+            "nxos_hmm": {
+                "current": "nxos:index/getHmm:getHmm"
+            },
+            "nxos_hmm_instance": {
+                "current": "nxos:index/getHmmInstance:getHmmInstance"
+            },
+            "nxos_hmm_interface": {
+                "current": "nxos:index/getHmmInterface:getHmmInterface"
+            },
+            "nxos_ipv4_access_list": {
+                "current": "nxos:index/getIpv4AccessList:getIpv4AccessList"
+            },
+            "nxos_ipv4_access_list_entry": {
+                "current": "nxos:index/getIpv4AccessListEntry:getIpv4AccessListEntry"
+            },
+            "nxos_ipv4_access_list_policy_egress_interface": {
+                "current": "nxos:index/getIpv4AccessListPolicyEgressInterface:getIpv4AccessListPolicyEgressInterface"
+            },
+            "nxos_ipv4_access_list_policy_ingress_interface": {
+                "current": "nxos:index/getIpv4AccessListPolicyIngressInterface:getIpv4AccessListPolicyIngressInterface"
+            },
+            "nxos_ipv4_interface": {
+                "current": "nxos:index/getIpv4Interface:getIpv4Interface"
+            },
+            "nxos_ipv4_interface_address": {
+                "current": "nxos:index/getIpv4InterfaceAddress:getIpv4InterfaceAddress"
+            },
+            "nxos_ipv4_prefix_list_rule": {
+                "current": "nxos:index/getIpv4PrefixListRule:getIpv4PrefixListRule"
+            },
+            "nxos_ipv4_prefix_list_rule_entry": {
+                "current": "nxos:index/getIpv4PrefixListRuleEntry:getIpv4PrefixListRuleEntry"
+            },
+            "nxos_ipv4_static_route": {
+                "current": "nxos:index/getIpv4StaticRoute:getIpv4StaticRoute",
+                "fields": {
+                    "next_hops": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "nxos_ipv4_vrf": {
+                "current": "nxos:index/getIpv4Vrf:getIpv4Vrf"
+            },
+            "nxos_isis": {
+                "current": "nxos:index/getIsis:getIsis"
+            },
+            "nxos_isis_instance": {
+                "current": "nxos:index/getIsisInstance:getIsisInstance"
+            },
+            "nxos_isis_interface": {
+                "current": "nxos:index/getIsisInterface:getIsisInterface"
+            },
+            "nxos_isis_vrf": {
+                "current": "nxos:index/getIsisVrf:getIsisVrf"
+            },
+            "nxos_loopback_interface": {
+                "current": "nxos:index/getLoopbackInterface:getLoopbackInterface"
+            },
+            "nxos_loopback_interface_vrf": {
+                "current": "nxos:index/getLoopbackInterfaceVrf:getLoopbackInterfaceVrf"
+            },
+            "nxos_ntp_server": {
+                "current": "nxos:index/getNtpServer:getNtpServer"
+            },
+            "nxos_nve_interface": {
+                "current": "nxos:index/getNveInterface:getNveInterface"
+            },
+            "nxos_nve_vni": {
+                "current": "nxos:index/getNveVni:getNveVni"
+            },
+            "nxos_nve_vni_container": {
+                "current": "nxos:index/getNveVniContainer:getNveVniContainer"
+            },
+            "nxos_nve_vni_ingress_replication": {
+                "current": "nxos:index/getNveVniIngressReplication:getNveVniIngressReplication"
+            },
+            "nxos_ospf": {
+                "current": "nxos:index/getOspf:getOspf"
+            },
+            "nxos_ospf_area": {
+                "current": "nxos:index/getOspfArea:getOspfArea"
+            },
+            "nxos_ospf_authentication": {
+                "current": "nxos:index/getOspfAuthentication:getOspfAuthentication"
+            },
+            "nxos_ospf_instance": {
+                "current": "nxos:index/getOspfInstance:getOspfInstance"
+            },
+            "nxos_ospf_interface": {
+                "current": "nxos:index/getOspfInterface:getOspfInterface"
+            },
+            "nxos_ospf_vrf": {
+                "current": "nxos:index/getOspfVrf:getOspfVrf"
+            },
+            "nxos_physical_interface": {
+                "current": "nxos:index/getPhysicalInterface:getPhysicalInterface"
+            },
+            "nxos_physical_interface_vrf": {
+                "current": "nxos:index/getPhysicalInterfaceVrf:getPhysicalInterfaceVrf"
+            },
+            "nxos_pim": {
+                "current": "nxos:index/getPim:getPim"
+            },
+            "nxos_pim_anycast_rp": {
+                "current": "nxos:index/getPimAnycastRp:getPimAnycastRp"
+            },
+            "nxos_pim_anycast_rp_peer": {
+                "current": "nxos:index/getPimAnycastRpPeer:getPimAnycastRpPeer"
+            },
+            "nxos_pim_instance": {
+                "current": "nxos:index/getPimInstance:getPimInstance"
+            },
+            "nxos_pim_interface": {
+                "current": "nxos:index/getPimInterface:getPimInterface"
+            },
+            "nxos_pim_ssm_policy": {
+                "current": "nxos:index/getPimSsmPolicy:getPimSsmPolicy"
+            },
+            "nxos_pim_ssm_range": {
+                "current": "nxos:index/getPimSsmRange:getPimSsmRange"
+            },
+            "nxos_pim_static_rp": {
+                "current": "nxos:index/getPimStaticRp:getPimStaticRp"
+            },
+            "nxos_pim_static_rp_group_list": {
+                "current": "nxos:index/getPimStaticRpGroupList:getPimStaticRpGroupList"
+            },
+            "nxos_pim_static_rp_policy": {
+                "current": "nxos:index/getPimStaticRpPolicy:getPimStaticRpPolicy"
+            },
+            "nxos_pim_vrf": {
+                "current": "nxos:index/getPimVrf:getPimVrf"
+            },
+            "nxos_port_channel_interface": {
+                "current": "nxos:index/getPortChannelInterface:getPortChannelInterface"
+            },
+            "nxos_port_channel_interface_member": {
+                "current": "nxos:index/getPortChannelInterfaceMember:getPortChannelInterfaceMember"
+            },
+            "nxos_port_channel_interface_vrf": {
+                "current": "nxos:index/getPortChannelInterfaceVrf:getPortChannelInterfaceVrf"
+            },
+            "nxos_queuing_qos_policy_map": {
+                "current": "nxos:index/getQueuingQosPolicyMap:getQueuingQosPolicyMap"
+            },
+            "nxos_queuing_qos_policy_map_match_class_map": {
+                "current": "nxos:index/getQueuingQosPolicyMapMatchClassMap:getQueuingQosPolicyMapMatchClassMap"
+            },
+            "nxos_queuing_qos_policy_map_match_class_map_priority": {
+                "current": "nxos:index/getQueuingQosPolicyMapMatchClassMapPriority:getQueuingQosPolicyMapMatchClassMapPriority"
+            },
+            "nxos_queuing_qos_policy_map_match_class_map_remaining_bandwidth": {
+                "current": "nxos:index/getQueuingQosPolicyMapMatchClassMapRemainingBandwidth:getQueuingQosPolicyMapMatchClassMapRemainingBandwidth"
+            },
+            "nxos_queuing_qos_policy_system_out": {
+                "current": "nxos:index/getQueuingQosPolicySystemOut:getQueuingQosPolicySystemOut"
+            },
+            "nxos_queuing_qos_policy_system_out_policy_map": {
+                "current": "nxos:index/getQueuingQosPolicySystemOutPolicyMap:getQueuingQosPolicySystemOutPolicyMap"
+            },
+            "nxos_rest": {
+                "current": "nxos:index/getRest:getRest"
+            },
+            "nxos_route_map_rule": {
+                "current": "nxos:index/getRouteMapRule:getRouteMapRule"
+            },
+            "nxos_route_map_rule_entry": {
+                "current": "nxos:index/getRouteMapRuleEntry:getRouteMapRuleEntry"
+            },
+            "nxos_route_map_rule_entry_match_route": {
+                "current": "nxos:index/getRouteMapRuleEntryMatchRoute:getRouteMapRuleEntryMatchRoute"
+            },
+            "nxos_route_map_rule_entry_match_route_prefix_list": {
+                "current": "nxos:index/getRouteMapRuleEntryMatchRoutePrefixList:getRouteMapRuleEntryMatchRoutePrefixList"
+            },
+            "nxos_route_map_rule_entry_set_regular_community": {
+                "current": "nxos:index/getRouteMapRuleEntrySetRegularCommunity:getRouteMapRuleEntrySetRegularCommunity"
+            },
+            "nxos_route_map_rule_entry_set_regular_community_item": {
+                "current": "nxos:index/getRouteMapRuleEntrySetRegularCommunityItem:getRouteMapRuleEntrySetRegularCommunityItem"
+            },
+            "nxos_spanning_tree_interface": {
+                "current": "nxos:index/getSpanningTreeInterface:getSpanningTreeInterface"
+            },
+            "nxos_subinterface": {
+                "current": "nxos:index/getSubinterface:getSubinterface"
+            },
+            "nxos_subinterface_vrf": {
+                "current": "nxos:index/getSubinterfaceVrf:getSubinterfaceVrf"
+            },
+            "nxos_svi_interface": {
+                "current": "nxos:index/getSviInterface:getSviInterface"
+            },
+            "nxos_svi_interface_vrf": {
+                "current": "nxos:index/getSviInterfaceVrf:getSviInterfaceVrf"
+            },
+            "nxos_system": {
+                "current": "nxos:index/getSystem:getSystem"
+            },
+            "nxos_vpc_domain": {
+                "current": "nxos:index/getVpcDomain:getVpcDomain"
+            },
+            "nxos_vpc_instance": {
+                "current": "nxos:index/getVpcInstance:getVpcInstance"
+            },
+            "nxos_vpc_interface": {
+                "current": "nxos:index/getVpcInterface:getVpcInterface"
+            },
+            "nxos_vrf": {
+                "current": "nxos:index/getVrf:getVrf"
+            },
+            "nxos_vrf_address_family": {
+                "current": "nxos:index/getVrfAddressFamily:getVrfAddressFamily"
+            },
+            "nxos_vrf_route_target": {
+                "current": "nxos:index/getVrfRouteTarget:getVrfRouteTarget"
+            },
+            "nxos_vrf_route_target_address_family": {
+                "current": "nxos:index/getVrfRouteTargetAddressFamily:getVrfRouteTargetAddressFamily"
+            },
+            "nxos_vrf_route_target_direction": {
+                "current": "nxos:index/getVrfRouteTargetDirection:getVrfRouteTargetDirection"
+            },
+            "nxos_vrf_routing": {
+                "current": "nxos:index/getVrfRouting:getVrfRouting"
+            }
+        }
+    },
     "renames": {
         "resources": {
-            "nxos:nxos/bgp:Bgp": "nxos_bgp",
-            "nxos:nxos/bgpAddressFamily:BgpAddressFamily": "nxos_bgp_address_family",
-            "nxos:nxos/bgpAdvertisedPrefix:BgpAdvertisedPrefix": "nxos_bgp_advertised_prefix",
-            "nxos:nxos/bgpGracefulRestart:BgpGracefulRestart": "nxos_bgp_graceful_restart",
-            "nxos:nxos/bgpInstance:BgpInstance": "nxos_bgp_instance",
-            "nxos:nxos/bgpPeer:BgpPeer": "nxos_bgp_peer",
-            "nxos:nxos/bgpPeerAddressFamily:BgpPeerAddressFamily": "nxos_bgp_peer_address_family",
-            "nxos:nxos/bgpPeerAddressFamilyPrefixListControl:BgpPeerAddressFamilyPrefixListControl": "nxos_bgp_peer_address_family_prefix_list_control",
-            "nxos:nxos/bgpPeerAddressFamilyRouteControl:BgpPeerAddressFamilyRouteControl": "nxos_bgp_peer_address_family_route_control",
-            "nxos:nxos/bgpPeerTemplate:BgpPeerTemplate": "nxos_bgp_peer_template",
-            "nxos:nxos/bgpPeerTemplateAddressFamily:BgpPeerTemplateAddressFamily": "nxos_bgp_peer_template_address_family",
-            "nxos:nxos/bgpPeerTemplateMaxPrefix:BgpPeerTemplateMaxPrefix": "nxos_bgp_peer_template_max_prefix",
-            "nxos:nxos/bgpRouteControl:BgpRouteControl": "nxos_bgp_route_control",
-            "nxos:nxos/bgpVrf:BgpVrf": "nxos_bgp_vrf",
-            "nxos:nxos/bridgeDomain:BridgeDomain": "nxos_bridge_domain",
-            "nxos:nxos/defaultQosClassMap:DefaultQosClassMap": "nxos_default_qos_class_map",
-            "nxos:nxos/defaultQosClassMapDscp:DefaultQosClassMapDscp": "nxos_default_qos_class_map_dscp",
-            "nxos:nxos/defaultQosPolicyInterfaceIn:DefaultQosPolicyInterfaceIn": "nxos_default_qos_policy_interface_in",
-            "nxos:nxos/defaultQosPolicyInterfaceInPolicyMap:DefaultQosPolicyInterfaceInPolicyMap": "nxos_default_qos_policy_interface_in_policy_map",
-            "nxos:nxos/defaultQosPolicyMap:DefaultQosPolicyMap": "nxos_default_qos_policy_map",
-            "nxos:nxos/defaultQosPolicyMapMatchClassMap:DefaultQosPolicyMapMatchClassMap": "nxos_default_qos_policy_map_match_class_map",
-            "nxos:nxos/defaultQosPolicyMapMatchClassMapPolice:DefaultQosPolicyMapMatchClassMapPolice": "nxos_default_qos_policy_map_match_class_map_police",
-            "nxos:nxos/defaultQosPolicyMapMatchClassMapSetQosGroup:DefaultQosPolicyMapMatchClassMapSetQosGroup": "nxos_default_qos_policy_map_match_class_map_set_qos_group",
-            "nxos:nxos/dhcpRelayAddress:DhcpRelayAddress": "nxos_dhcp_relay_address",
-            "nxos:nxos/dhcpRelayInterface:DhcpRelayInterface": "nxos_dhcp_relay_interface",
-            "nxos:nxos/ethernet:Ethernet": "nxos_ethernet",
-            "nxos:nxos/evpn:Evpn": "nxos_evpn",
-            "nxos:nxos/evpnVni:EvpnVni": "nxos_evpn_vni",
-            "nxos:nxos/evpnVniRouteTarget:EvpnVniRouteTarget": "nxos_evpn_vni_route_target",
-            "nxos:nxos/evpnVniRouteTargetDirection:EvpnVniRouteTargetDirection": "nxos_evpn_vni_route_target_direction",
-            "nxos:nxos/featureBfd:FeatureBfd": "nxos_feature_bfd",
-            "nxos:nxos/featureBgp:FeatureBgp": "nxos_feature_bgp",
-            "nxos:nxos/featureDhcp:FeatureDhcp": "nxos_feature_dhcp",
-            "nxos:nxos/featureEvpn:FeatureEvpn": "nxos_feature_evpn",
-            "nxos:nxos/featureHmm:FeatureHmm": "nxos_feature_hmm",
-            "nxos:nxos/featureHsrp:FeatureHsrp": "nxos_feature_hsrp",
-            "nxos:nxos/featureInterfaceVlan:FeatureInterfaceVlan": "nxos_feature_interface_vlan",
-            "nxos:nxos/featureIsis:FeatureIsis": "nxos_feature_isis",
-            "nxos:nxos/featureLacp:FeatureLacp": "nxos_feature_lacp",
-            "nxos:nxos/featureLldp:FeatureLldp": "nxos_feature_lldp",
-            "nxos:nxos/featureMacsec:FeatureMacsec": "nxos_feature_macsec",
-            "nxos:nxos/featureNetflow:FeatureNetflow": "nxos_feature_netflow",
-            "nxos:nxos/featureNvOverlay:FeatureNvOverlay": "nxos_feature_nv_overlay",
-            "nxos:nxos/featureOspf:FeatureOspf": "nxos_feature_ospf",
-            "nxos:nxos/featureOspfv3:FeatureOspfv3": "nxos_feature_ospfv3",
-            "nxos:nxos/featurePim:FeaturePim": "nxos_feature_pim",
-            "nxos:nxos/featurePtp:FeaturePtp": "nxos_feature_ptp",
-            "nxos:nxos/featurePvlan:FeaturePvlan": "nxos_feature_pvlan",
-            "nxos:nxos/featureSsh:FeatureSsh": "nxos_feature_ssh",
-            "nxos:nxos/featureTacacs:FeatureTacacs": "nxos_feature_tacacs",
-            "nxos:nxos/featureTelnet:FeatureTelnet": "nxos_feature_telnet",
-            "nxos:nxos/featureUdld:FeatureUdld": "nxos_feature_udld",
-            "nxos:nxos/featureVnSegment:FeatureVnSegment": "nxos_feature_vn_segment",
-            "nxos:nxos/featureVpc:FeatureVpc": "nxos_feature_vpc",
-            "nxos:nxos/hmm:Hmm": "nxos_hmm",
-            "nxos:nxos/hmmInstance:HmmInstance": "nxos_hmm_instance",
-            "nxos:nxos/hmmInterface:HmmInterface": "nxos_hmm_interface",
-            "nxos:nxos/ipv4AccessList:Ipv4AccessList": "nxos_ipv4_access_list",
-            "nxos:nxos/ipv4AccessListEntry:Ipv4AccessListEntry": "nxos_ipv4_access_list_entry",
-            "nxos:nxos/ipv4AccessListPolicyEgressInterface:Ipv4AccessListPolicyEgressInterface": "nxos_ipv4_access_list_policy_egress_interface",
-            "nxos:nxos/ipv4AccessListPolicyIngressInterface:Ipv4AccessListPolicyIngressInterface": "nxos_ipv4_access_list_policy_ingress_interface",
-            "nxos:nxos/ipv4Interface:Ipv4Interface": "nxos_ipv4_interface",
-            "nxos:nxos/ipv4InterfaceAddress:Ipv4InterfaceAddress": "nxos_ipv4_interface_address",
-            "nxos:nxos/ipv4PrefixListRule:Ipv4PrefixListRule": "nxos_ipv4_prefix_list_rule",
-            "nxos:nxos/ipv4PrefixListRuleEntry:Ipv4PrefixListRuleEntry": "nxos_ipv4_prefix_list_rule_entry",
-            "nxos:nxos/ipv4StaticRoute:Ipv4StaticRoute": "nxos_ipv4_static_route",
-            "nxos:nxos/ipv4Vrf:Ipv4Vrf": "nxos_ipv4_vrf",
-            "nxos:nxos/isis:Isis": "nxos_isis",
-            "nxos:nxos/isisInstance:IsisInstance": "nxos_isis_instance",
-            "nxos:nxos/isisInterface:IsisInterface": "nxos_isis_interface",
-            "nxos:nxos/isisVrf:IsisVrf": "nxos_isis_vrf",
-            "nxos:nxos/loopbackInterface:LoopbackInterface": "nxos_loopback_interface",
-            "nxos:nxos/loopbackInterfaceVrf:LoopbackInterfaceVrf": "nxos_loopback_interface_vrf",
-            "nxos:nxos/ntpServer:NtpServer": "nxos_ntp_server",
-            "nxos:nxos/nveInterface:NveInterface": "nxos_nve_interface",
-            "nxos:nxos/nveVni:NveVni": "nxos_nve_vni",
-            "nxos:nxos/nveVniContainer:NveVniContainer": "nxos_nve_vni_container",
-            "nxos:nxos/nveVniIngressReplication:NveVniIngressReplication": "nxos_nve_vni_ingress_replication",
-            "nxos:nxos/ospf:Ospf": "nxos_ospf",
-            "nxos:nxos/ospfArea:OspfArea": "nxos_ospf_area",
-            "nxos:nxos/ospfAuthentication:OspfAuthentication": "nxos_ospf_authentication",
-            "nxos:nxos/ospfInstance:OspfInstance": "nxos_ospf_instance",
-            "nxos:nxos/ospfInterface:OspfInterface": "nxos_ospf_interface",
-            "nxos:nxos/ospfVrf:OspfVrf": "nxos_ospf_vrf",
-            "nxos:nxos/physicalInterface:PhysicalInterface": "nxos_physical_interface",
-            "nxos:nxos/physicalInterfaceVrf:PhysicalInterfaceVrf": "nxos_physical_interface_vrf",
-            "nxos:nxos/pim:Pim": "nxos_pim",
-            "nxos:nxos/pimAnycastRp:PimAnycastRp": "nxos_pim_anycast_rp",
-            "nxos:nxos/pimAnycastRpPeer:PimAnycastRpPeer": "nxos_pim_anycast_rp_peer",
-            "nxos:nxos/pimInstance:PimInstance": "nxos_pim_instance",
-            "nxos:nxos/pimInterface:PimInterface": "nxos_pim_interface",
-            "nxos:nxos/pimSsmPolicy:PimSsmPolicy": "nxos_pim_ssm_policy",
-            "nxos:nxos/pimSsmRange:PimSsmRange": "nxos_pim_ssm_range",
-            "nxos:nxos/pimStaticRp:PimStaticRp": "nxos_pim_static_rp",
-            "nxos:nxos/pimStaticRpGroupList:PimStaticRpGroupList": "nxos_pim_static_rp_group_list",
-            "nxos:nxos/pimStaticRpPolicy:PimStaticRpPolicy": "nxos_pim_static_rp_policy",
-            "nxos:nxos/pimVrf:PimVrf": "nxos_pim_vrf",
-            "nxos:nxos/portChannelInterface:PortChannelInterface": "nxos_port_channel_interface",
-            "nxos:nxos/portChannelInterfaceMember:PortChannelInterfaceMember": "nxos_port_channel_interface_member",
-            "nxos:nxos/portChannelInterfaceVrf:PortChannelInterfaceVrf": "nxos_port_channel_interface_vrf",
-            "nxos:nxos/queuingQosPolicyMap:QueuingQosPolicyMap": "nxos_queuing_qos_policy_map",
-            "nxos:nxos/queuingQosPolicyMapMatchClassMap:QueuingQosPolicyMapMatchClassMap": "nxos_queuing_qos_policy_map_match_class_map",
-            "nxos:nxos/queuingQosPolicyMapMatchClassMapPriority:QueuingQosPolicyMapMatchClassMapPriority": "nxos_queuing_qos_policy_map_match_class_map_priority",
-            "nxos:nxos/queuingQosPolicyMapMatchClassMapRemainingBandwidth:QueuingQosPolicyMapMatchClassMapRemainingBandwidth": "nxos_queuing_qos_policy_map_match_class_map_remaining_bandwidth",
-            "nxos:nxos/queuingQosPolicySystemOut:QueuingQosPolicySystemOut": "nxos_queuing_qos_policy_system_out",
-            "nxos:nxos/queuingQosPolicySystemOutPolicyMap:QueuingQosPolicySystemOutPolicyMap": "nxos_queuing_qos_policy_system_out_policy_map",
-            "nxos:nxos/rest:Rest": "nxos_rest",
-            "nxos:nxos/routeMapRule:RouteMapRule": "nxos_route_map_rule",
-            "nxos:nxos/routeMapRuleEntry:RouteMapRuleEntry": "nxos_route_map_rule_entry",
-            "nxos:nxos/routeMapRuleEntryMatchRoute:RouteMapRuleEntryMatchRoute": "nxos_route_map_rule_entry_match_route",
-            "nxos:nxos/routeMapRuleEntryMatchRoutePrefixList:RouteMapRuleEntryMatchRoutePrefixList": "nxos_route_map_rule_entry_match_route_prefix_list",
-            "nxos:nxos/routeMapRuleEntrySetRegularCommunity:RouteMapRuleEntrySetRegularCommunity": "nxos_route_map_rule_entry_set_regular_community",
-            "nxos:nxos/routeMapRuleEntrySetRegularCommunityItem:RouteMapRuleEntrySetRegularCommunityItem": "nxos_route_map_rule_entry_set_regular_community_item",
-            "nxos:nxos/spanningTreeInterface:SpanningTreeInterface": "nxos_spanning_tree_interface",
-            "nxos:nxos/subinterface:Subinterface": "nxos_subinterface",
-            "nxos:nxos/subinterfaceVrf:SubinterfaceVrf": "nxos_subinterface_vrf",
-            "nxos:nxos/sviInterface:SviInterface": "nxos_svi_interface",
-            "nxos:nxos/sviInterfaceVrf:SviInterfaceVrf": "nxos_svi_interface_vrf",
-            "nxos:nxos/system:System": "nxos_system",
-            "nxos:nxos/vpcDomain:VpcDomain": "nxos_vpc_domain",
-            "nxos:nxos/vpcInstance:VpcInstance": "nxos_vpc_instance",
-            "nxos:nxos/vpcInterface:VpcInterface": "nxos_vpc_interface",
-            "nxos:nxos/vrf:Vrf": "nxos_vrf",
-            "nxos:nxos/vrfAddressFamily:VrfAddressFamily": "nxos_vrf_address_family",
-            "nxos:nxos/vrfRouteTarget:VrfRouteTarget": "nxos_vrf_route_target",
-            "nxos:nxos/vrfRouteTargetAddressFamily:VrfRouteTargetAddressFamily": "nxos_vrf_route_target_address_family",
-            "nxos:nxos/vrfRouteTargetDirection:VrfRouteTargetDirection": "nxos_vrf_route_target_direction",
-            "nxos:nxos/vrfRouting:VrfRouting": "nxos_vrf_routing"
+            "nxos:index/bgp:Bgp": "nxos_bgp",
+            "nxos:index/bgpAddressFamily:BgpAddressFamily": "nxos_bgp_address_family",
+            "nxos:index/bgpAdvertisedPrefix:BgpAdvertisedPrefix": "nxos_bgp_advertised_prefix",
+            "nxos:index/bgpGracefulRestart:BgpGracefulRestart": "nxos_bgp_graceful_restart",
+            "nxos:index/bgpInstance:BgpInstance": "nxos_bgp_instance",
+            "nxos:index/bgpPeer:BgpPeer": "nxos_bgp_peer",
+            "nxos:index/bgpPeerAddressFamily:BgpPeerAddressFamily": "nxos_bgp_peer_address_family",
+            "nxos:index/bgpPeerAddressFamilyPrefixListControl:BgpPeerAddressFamilyPrefixListControl": "nxos_bgp_peer_address_family_prefix_list_control",
+            "nxos:index/bgpPeerAddressFamilyRouteControl:BgpPeerAddressFamilyRouteControl": "nxos_bgp_peer_address_family_route_control",
+            "nxos:index/bgpPeerTemplate:BgpPeerTemplate": "nxos_bgp_peer_template",
+            "nxos:index/bgpPeerTemplateAddressFamily:BgpPeerTemplateAddressFamily": "nxos_bgp_peer_template_address_family",
+            "nxos:index/bgpPeerTemplateMaxPrefix:BgpPeerTemplateMaxPrefix": "nxos_bgp_peer_template_max_prefix",
+            "nxos:index/bgpRouteControl:BgpRouteControl": "nxos_bgp_route_control",
+            "nxos:index/bgpVrf:BgpVrf": "nxos_bgp_vrf",
+            "nxos:index/bridgeDomain:BridgeDomain": "nxos_bridge_domain",
+            "nxos:index/defaultQosClassMap:DefaultQosClassMap": "nxos_default_qos_class_map",
+            "nxos:index/defaultQosClassMapDscp:DefaultQosClassMapDscp": "nxos_default_qos_class_map_dscp",
+            "nxos:index/defaultQosPolicyInterfaceIn:DefaultQosPolicyInterfaceIn": "nxos_default_qos_policy_interface_in",
+            "nxos:index/defaultQosPolicyInterfaceInPolicyMap:DefaultQosPolicyInterfaceInPolicyMap": "nxos_default_qos_policy_interface_in_policy_map",
+            "nxos:index/defaultQosPolicyMap:DefaultQosPolicyMap": "nxos_default_qos_policy_map",
+            "nxos:index/defaultQosPolicyMapMatchClassMap:DefaultQosPolicyMapMatchClassMap": "nxos_default_qos_policy_map_match_class_map",
+            "nxos:index/defaultQosPolicyMapMatchClassMapPolice:DefaultQosPolicyMapMatchClassMapPolice": "nxos_default_qos_policy_map_match_class_map_police",
+            "nxos:index/defaultQosPolicyMapMatchClassMapSetQosGroup:DefaultQosPolicyMapMatchClassMapSetQosGroup": "nxos_default_qos_policy_map_match_class_map_set_qos_group",
+            "nxos:index/dhcpRelayAddress:DhcpRelayAddress": "nxos_dhcp_relay_address",
+            "nxos:index/dhcpRelayInterface:DhcpRelayInterface": "nxos_dhcp_relay_interface",
+            "nxos:index/ethernet:Ethernet": "nxos_ethernet",
+            "nxos:index/evpn:Evpn": "nxos_evpn",
+            "nxos:index/evpnVni:EvpnVni": "nxos_evpn_vni",
+            "nxos:index/evpnVniRouteTarget:EvpnVniRouteTarget": "nxos_evpn_vni_route_target",
+            "nxos:index/evpnVniRouteTargetDirection:EvpnVniRouteTargetDirection": "nxos_evpn_vni_route_target_direction",
+            "nxos:index/featureBfd:FeatureBfd": "nxos_feature_bfd",
+            "nxos:index/featureBgp:FeatureBgp": "nxos_feature_bgp",
+            "nxos:index/featureDhcp:FeatureDhcp": "nxos_feature_dhcp",
+            "nxos:index/featureEvpn:FeatureEvpn": "nxos_feature_evpn",
+            "nxos:index/featureHmm:FeatureHmm": "nxos_feature_hmm",
+            "nxos:index/featureHsrp:FeatureHsrp": "nxos_feature_hsrp",
+            "nxos:index/featureInterfaceVlan:FeatureInterfaceVlan": "nxos_feature_interface_vlan",
+            "nxos:index/featureIsis:FeatureIsis": "nxos_feature_isis",
+            "nxos:index/featureLacp:FeatureLacp": "nxos_feature_lacp",
+            "nxos:index/featureLldp:FeatureLldp": "nxos_feature_lldp",
+            "nxos:index/featureMacsec:FeatureMacsec": "nxos_feature_macsec",
+            "nxos:index/featureNetflow:FeatureNetflow": "nxos_feature_netflow",
+            "nxos:index/featureNvOverlay:FeatureNvOverlay": "nxos_feature_nv_overlay",
+            "nxos:index/featureOspf:FeatureOspf": "nxos_feature_ospf",
+            "nxos:index/featureOspfv3:FeatureOspfv3": "nxos_feature_ospfv3",
+            "nxos:index/featurePim:FeaturePim": "nxos_feature_pim",
+            "nxos:index/featurePtp:FeaturePtp": "nxos_feature_ptp",
+            "nxos:index/featurePvlan:FeaturePvlan": "nxos_feature_pvlan",
+            "nxos:index/featureSsh:FeatureSsh": "nxos_feature_ssh",
+            "nxos:index/featureTacacs:FeatureTacacs": "nxos_feature_tacacs",
+            "nxos:index/featureTelnet:FeatureTelnet": "nxos_feature_telnet",
+            "nxos:index/featureUdld:FeatureUdld": "nxos_feature_udld",
+            "nxos:index/featureVnSegment:FeatureVnSegment": "nxos_feature_vn_segment",
+            "nxos:index/featureVpc:FeatureVpc": "nxos_feature_vpc",
+            "nxos:index/hmm:Hmm": "nxos_hmm",
+            "nxos:index/hmmInstance:HmmInstance": "nxos_hmm_instance",
+            "nxos:index/hmmInterface:HmmInterface": "nxos_hmm_interface",
+            "nxos:index/ipv4AccessList:Ipv4AccessList": "nxos_ipv4_access_list",
+            "nxos:index/ipv4AccessListEntry:Ipv4AccessListEntry": "nxos_ipv4_access_list_entry",
+            "nxos:index/ipv4AccessListPolicyEgressInterface:Ipv4AccessListPolicyEgressInterface": "nxos_ipv4_access_list_policy_egress_interface",
+            "nxos:index/ipv4AccessListPolicyIngressInterface:Ipv4AccessListPolicyIngressInterface": "nxos_ipv4_access_list_policy_ingress_interface",
+            "nxos:index/ipv4Interface:Ipv4Interface": "nxos_ipv4_interface",
+            "nxos:index/ipv4InterfaceAddress:Ipv4InterfaceAddress": "nxos_ipv4_interface_address",
+            "nxos:index/ipv4PrefixListRule:Ipv4PrefixListRule": "nxos_ipv4_prefix_list_rule",
+            "nxos:index/ipv4PrefixListRuleEntry:Ipv4PrefixListRuleEntry": "nxos_ipv4_prefix_list_rule_entry",
+            "nxos:index/ipv4StaticRoute:Ipv4StaticRoute": "nxos_ipv4_static_route",
+            "nxos:index/ipv4Vrf:Ipv4Vrf": "nxos_ipv4_vrf",
+            "nxos:index/isis:Isis": "nxos_isis",
+            "nxos:index/isisInstance:IsisInstance": "nxos_isis_instance",
+            "nxos:index/isisInterface:IsisInterface": "nxos_isis_interface",
+            "nxos:index/isisVrf:IsisVrf": "nxos_isis_vrf",
+            "nxos:index/loopbackInterface:LoopbackInterface": "nxos_loopback_interface",
+            "nxos:index/loopbackInterfaceVrf:LoopbackInterfaceVrf": "nxos_loopback_interface_vrf",
+            "nxos:index/ntpServer:NtpServer": "nxos_ntp_server",
+            "nxos:index/nveInterface:NveInterface": "nxos_nve_interface",
+            "nxos:index/nveVni:NveVni": "nxos_nve_vni",
+            "nxos:index/nveVniContainer:NveVniContainer": "nxos_nve_vni_container",
+            "nxos:index/nveVniIngressReplication:NveVniIngressReplication": "nxos_nve_vni_ingress_replication",
+            "nxos:index/ospf:Ospf": "nxos_ospf",
+            "nxos:index/ospfArea:OspfArea": "nxos_ospf_area",
+            "nxos:index/ospfAuthentication:OspfAuthentication": "nxos_ospf_authentication",
+            "nxos:index/ospfInstance:OspfInstance": "nxos_ospf_instance",
+            "nxos:index/ospfInterface:OspfInterface": "nxos_ospf_interface",
+            "nxos:index/ospfVrf:OspfVrf": "nxos_ospf_vrf",
+            "nxos:index/physicalInterface:PhysicalInterface": "nxos_physical_interface",
+            "nxos:index/physicalInterfaceVrf:PhysicalInterfaceVrf": "nxos_physical_interface_vrf",
+            "nxos:index/pim:Pim": "nxos_pim",
+            "nxos:index/pimAnycastRp:PimAnycastRp": "nxos_pim_anycast_rp",
+            "nxos:index/pimAnycastRpPeer:PimAnycastRpPeer": "nxos_pim_anycast_rp_peer",
+            "nxos:index/pimInstance:PimInstance": "nxos_pim_instance",
+            "nxos:index/pimInterface:PimInterface": "nxos_pim_interface",
+            "nxos:index/pimSsmPolicy:PimSsmPolicy": "nxos_pim_ssm_policy",
+            "nxos:index/pimSsmRange:PimSsmRange": "nxos_pim_ssm_range",
+            "nxos:index/pimStaticRp:PimStaticRp": "nxos_pim_static_rp",
+            "nxos:index/pimStaticRpGroupList:PimStaticRpGroupList": "nxos_pim_static_rp_group_list",
+            "nxos:index/pimStaticRpPolicy:PimStaticRpPolicy": "nxos_pim_static_rp_policy",
+            "nxos:index/pimVrf:PimVrf": "nxos_pim_vrf",
+            "nxos:index/portChannelInterface:PortChannelInterface": "nxos_port_channel_interface",
+            "nxos:index/portChannelInterfaceMember:PortChannelInterfaceMember": "nxos_port_channel_interface_member",
+            "nxos:index/portChannelInterfaceVrf:PortChannelInterfaceVrf": "nxos_port_channel_interface_vrf",
+            "nxos:index/queuingQosPolicyMap:QueuingQosPolicyMap": "nxos_queuing_qos_policy_map",
+            "nxos:index/queuingQosPolicyMapMatchClassMap:QueuingQosPolicyMapMatchClassMap": "nxos_queuing_qos_policy_map_match_class_map",
+            "nxos:index/queuingQosPolicyMapMatchClassMapPriority:QueuingQosPolicyMapMatchClassMapPriority": "nxos_queuing_qos_policy_map_match_class_map_priority",
+            "nxos:index/queuingQosPolicyMapMatchClassMapRemainingBandwidth:QueuingQosPolicyMapMatchClassMapRemainingBandwidth": "nxos_queuing_qos_policy_map_match_class_map_remaining_bandwidth",
+            "nxos:index/queuingQosPolicySystemOut:QueuingQosPolicySystemOut": "nxos_queuing_qos_policy_system_out",
+            "nxos:index/queuingQosPolicySystemOutPolicyMap:QueuingQosPolicySystemOutPolicyMap": "nxos_queuing_qos_policy_system_out_policy_map",
+            "nxos:index/rest:Rest": "nxos_rest",
+            "nxos:index/routeMapRule:RouteMapRule": "nxos_route_map_rule",
+            "nxos:index/routeMapRuleEntry:RouteMapRuleEntry": "nxos_route_map_rule_entry",
+            "nxos:index/routeMapRuleEntryMatchRoute:RouteMapRuleEntryMatchRoute": "nxos_route_map_rule_entry_match_route",
+            "nxos:index/routeMapRuleEntryMatchRoutePrefixList:RouteMapRuleEntryMatchRoutePrefixList": "nxos_route_map_rule_entry_match_route_prefix_list",
+            "nxos:index/routeMapRuleEntrySetRegularCommunity:RouteMapRuleEntrySetRegularCommunity": "nxos_route_map_rule_entry_set_regular_community",
+            "nxos:index/routeMapRuleEntrySetRegularCommunityItem:RouteMapRuleEntrySetRegularCommunityItem": "nxos_route_map_rule_entry_set_regular_community_item",
+            "nxos:index/spanningTreeInterface:SpanningTreeInterface": "nxos_spanning_tree_interface",
+            "nxos:index/subinterface:Subinterface": "nxos_subinterface",
+            "nxos:index/subinterfaceVrf:SubinterfaceVrf": "nxos_subinterface_vrf",
+            "nxos:index/sviInterface:SviInterface": "nxos_svi_interface",
+            "nxos:index/sviInterfaceVrf:SviInterfaceVrf": "nxos_svi_interface_vrf",
+            "nxos:index/system:System": "nxos_system",
+            "nxos:index/vpcDomain:VpcDomain": "nxos_vpc_domain",
+            "nxos:index/vpcInstance:VpcInstance": "nxos_vpc_instance",
+            "nxos:index/vpcInterface:VpcInterface": "nxos_vpc_interface",
+            "nxos:index/vrf:Vrf": "nxos_vrf",
+            "nxos:index/vrfAddressFamily:VrfAddressFamily": "nxos_vrf_address_family",
+            "nxos:index/vrfRouteTarget:VrfRouteTarget": "nxos_vrf_route_target",
+            "nxos:index/vrfRouteTargetAddressFamily:VrfRouteTargetAddressFamily": "nxos_vrf_route_target_address_family",
+            "nxos:index/vrfRouteTargetDirection:VrfRouteTargetDirection": "nxos_vrf_route_target_direction",
+            "nxos:index/vrfRouting:VrfRouting": "nxos_vrf_routing"
         },
         "functions": {
-            "nxos:nxos/getBgp:getBgp": "nxos_bgp",
-            "nxos:nxos/getBgpAddressFamily:getBgpAddressFamily": "nxos_bgp_address_family",
-            "nxos:nxos/getBgpAdvertisedPrefix:getBgpAdvertisedPrefix": "nxos_bgp_advertised_prefix",
-            "nxos:nxos/getBgpGracefulRestart:getBgpGracefulRestart": "nxos_bgp_graceful_restart",
-            "nxos:nxos/getBgpInstance:getBgpInstance": "nxos_bgp_instance",
-            "nxos:nxos/getBgpPeer:getBgpPeer": "nxos_bgp_peer",
-            "nxos:nxos/getBgpPeerAddressFamily:getBgpPeerAddressFamily": "nxos_bgp_peer_address_family",
-            "nxos:nxos/getBgpPeerAddressFamilyPrefixListControl:getBgpPeerAddressFamilyPrefixListControl": "nxos_bgp_peer_address_family_prefix_list_control",
-            "nxos:nxos/getBgpPeerAddressFamilyRouteControl:getBgpPeerAddressFamilyRouteControl": "nxos_bgp_peer_address_family_route_control",
-            "nxos:nxos/getBgpPeerTemplate:getBgpPeerTemplate": "nxos_bgp_peer_template",
-            "nxos:nxos/getBgpPeerTemplateAddressFamily:getBgpPeerTemplateAddressFamily": "nxos_bgp_peer_template_address_family",
-            "nxos:nxos/getBgpPeerTemplateMaxPrefix:getBgpPeerTemplateMaxPrefix": "nxos_bgp_peer_template_max_prefix",
-            "nxos:nxos/getBgpRouteControl:getBgpRouteControl": "nxos_bgp_route_control",
-            "nxos:nxos/getBgpVrf:getBgpVrf": "nxos_bgp_vrf",
-            "nxos:nxos/getBridgeDomain:getBridgeDomain": "nxos_bridge_domain",
-            "nxos:nxos/getDefaultQosClassMap:getDefaultQosClassMap": "nxos_default_qos_class_map",
-            "nxos:nxos/getDefaultQosClassMapDscp:getDefaultQosClassMapDscp": "nxos_default_qos_class_map_dscp",
-            "nxos:nxos/getDefaultQosPolicyInterfaceIn:getDefaultQosPolicyInterfaceIn": "nxos_default_qos_policy_interface_in",
-            "nxos:nxos/getDefaultQosPolicyInterfaceInPolicyMap:getDefaultQosPolicyInterfaceInPolicyMap": "nxos_default_qos_policy_interface_in_policy_map",
-            "nxos:nxos/getDefaultQosPolicyMap:getDefaultQosPolicyMap": "nxos_default_qos_policy_map",
-            "nxos:nxos/getDefaultQosPolicyMapMatchClassMap:getDefaultQosPolicyMapMatchClassMap": "nxos_default_qos_policy_map_match_class_map",
-            "nxos:nxos/getDefaultQosPolicyMapMatchClassMapPolice:getDefaultQosPolicyMapMatchClassMapPolice": "nxos_default_qos_policy_map_match_class_map_police",
-            "nxos:nxos/getDefaultQosPolicyMapMatchClassMapSetQosGroup:getDefaultQosPolicyMapMatchClassMapSetQosGroup": "nxos_default_qos_policy_map_match_class_map_set_qos_group",
-            "nxos:nxos/getDhcpRelayAddress:getDhcpRelayAddress": "nxos_dhcp_relay_address",
-            "nxos:nxos/getDhcpRelayInterface:getDhcpRelayInterface": "nxos_dhcp_relay_interface",
-            "nxos:nxos/getEthernet:getEthernet": "nxos_ethernet",
-            "nxos:nxos/getEvpn:getEvpn": "nxos_evpn",
-            "nxos:nxos/getEvpnVni:getEvpnVni": "nxos_evpn_vni",
-            "nxos:nxos/getEvpnVniRouteTarget:getEvpnVniRouteTarget": "nxos_evpn_vni_route_target",
-            "nxos:nxos/getEvpnVniRouteTargetDirection:getEvpnVniRouteTargetDirection": "nxos_evpn_vni_route_target_direction",
-            "nxos:nxos/getFeatureBfd:getFeatureBfd": "nxos_feature_bfd",
-            "nxos:nxos/getFeatureBgp:getFeatureBgp": "nxos_feature_bgp",
-            "nxos:nxos/getFeatureDhcp:getFeatureDhcp": "nxos_feature_dhcp",
-            "nxos:nxos/getFeatureEvpn:getFeatureEvpn": "nxos_feature_evpn",
-            "nxos:nxos/getFeatureHmm:getFeatureHmm": "nxos_feature_hmm",
-            "nxos:nxos/getFeatureHsrp:getFeatureHsrp": "nxos_feature_hsrp",
-            "nxos:nxos/getFeatureInterfaceVlan:getFeatureInterfaceVlan": "nxos_feature_interface_vlan",
-            "nxos:nxos/getFeatureIsis:getFeatureIsis": "nxos_feature_isis",
-            "nxos:nxos/getFeatureLacp:getFeatureLacp": "nxos_feature_lacp",
-            "nxos:nxos/getFeatureLldp:getFeatureLldp": "nxos_feature_lldp",
-            "nxos:nxos/getFeatureMacsec:getFeatureMacsec": "nxos_feature_macsec",
-            "nxos:nxos/getFeatureNetflow:getFeatureNetflow": "nxos_feature_netflow",
-            "nxos:nxos/getFeatureNvOverlay:getFeatureNvOverlay": "nxos_feature_nv_overlay",
-            "nxos:nxos/getFeatureOspf:getFeatureOspf": "nxos_feature_ospf",
-            "nxos:nxos/getFeatureOspfv3:getFeatureOspfv3": "nxos_feature_ospfv3",
-            "nxos:nxos/getFeaturePim:getFeaturePim": "nxos_feature_pim",
-            "nxos:nxos/getFeaturePtp:getFeaturePtp": "nxos_feature_ptp",
-            "nxos:nxos/getFeaturePvlan:getFeaturePvlan": "nxos_feature_pvlan",
-            "nxos:nxos/getFeatureSsh:getFeatureSsh": "nxos_feature_ssh",
-            "nxos:nxos/getFeatureTacacs:getFeatureTacacs": "nxos_feature_tacacs",
-            "nxos:nxos/getFeatureTelnet:getFeatureTelnet": "nxos_feature_telnet",
-            "nxos:nxos/getFeatureUdld:getFeatureUdld": "nxos_feature_udld",
-            "nxos:nxos/getFeatureVnSegment:getFeatureVnSegment": "nxos_feature_vn_segment",
-            "nxos:nxos/getFeatureVpc:getFeatureVpc": "nxos_feature_vpc",
-            "nxos:nxos/getHmm:getHmm": "nxos_hmm",
-            "nxos:nxos/getHmmInstance:getHmmInstance": "nxos_hmm_instance",
-            "nxos:nxos/getHmmInterface:getHmmInterface": "nxos_hmm_interface",
-            "nxos:nxos/getIpv4AccessList:getIpv4AccessList": "nxos_ipv4_access_list",
-            "nxos:nxos/getIpv4AccessListEntry:getIpv4AccessListEntry": "nxos_ipv4_access_list_entry",
-            "nxos:nxos/getIpv4AccessListPolicyEgressInterface:getIpv4AccessListPolicyEgressInterface": "nxos_ipv4_access_list_policy_egress_interface",
-            "nxos:nxos/getIpv4AccessListPolicyIngressInterface:getIpv4AccessListPolicyIngressInterface": "nxos_ipv4_access_list_policy_ingress_interface",
-            "nxos:nxos/getIpv4Interface:getIpv4Interface": "nxos_ipv4_interface",
-            "nxos:nxos/getIpv4InterfaceAddress:getIpv4InterfaceAddress": "nxos_ipv4_interface_address",
-            "nxos:nxos/getIpv4PrefixListRule:getIpv4PrefixListRule": "nxos_ipv4_prefix_list_rule",
-            "nxos:nxos/getIpv4PrefixListRuleEntry:getIpv4PrefixListRuleEntry": "nxos_ipv4_prefix_list_rule_entry",
-            "nxos:nxos/getIpv4StaticRoute:getIpv4StaticRoute": "nxos_ipv4_static_route",
-            "nxos:nxos/getIpv4Vrf:getIpv4Vrf": "nxos_ipv4_vrf",
-            "nxos:nxos/getIsis:getIsis": "nxos_isis",
-            "nxos:nxos/getIsisInstance:getIsisInstance": "nxos_isis_instance",
-            "nxos:nxos/getIsisInterface:getIsisInterface": "nxos_isis_interface",
-            "nxos:nxos/getIsisVrf:getIsisVrf": "nxos_isis_vrf",
-            "nxos:nxos/getLoopbackInterface:getLoopbackInterface": "nxos_loopback_interface",
-            "nxos:nxos/getLoopbackInterfaceVrf:getLoopbackInterfaceVrf": "nxos_loopback_interface_vrf",
-            "nxos:nxos/getNtpServer:getNtpServer": "nxos_ntp_server",
-            "nxos:nxos/getNveInterface:getNveInterface": "nxos_nve_interface",
-            "nxos:nxos/getNveVni:getNveVni": "nxos_nve_vni",
-            "nxos:nxos/getNveVniContainer:getNveVniContainer": "nxos_nve_vni_container",
-            "nxos:nxos/getNveVniIngressReplication:getNveVniIngressReplication": "nxos_nve_vni_ingress_replication",
-            "nxos:nxos/getOspf:getOspf": "nxos_ospf",
-            "nxos:nxos/getOspfArea:getOspfArea": "nxos_ospf_area",
-            "nxos:nxos/getOspfAuthentication:getOspfAuthentication": "nxos_ospf_authentication",
-            "nxos:nxos/getOspfInstance:getOspfInstance": "nxos_ospf_instance",
-            "nxos:nxos/getOspfInterface:getOspfInterface": "nxos_ospf_interface",
-            "nxos:nxos/getOspfVrf:getOspfVrf": "nxos_ospf_vrf",
-            "nxos:nxos/getPhysicalInterface:getPhysicalInterface": "nxos_physical_interface",
-            "nxos:nxos/getPhysicalInterfaceVrf:getPhysicalInterfaceVrf": "nxos_physical_interface_vrf",
-            "nxos:nxos/getPim:getPim": "nxos_pim",
-            "nxos:nxos/getPimAnycastRp:getPimAnycastRp": "nxos_pim_anycast_rp",
-            "nxos:nxos/getPimAnycastRpPeer:getPimAnycastRpPeer": "nxos_pim_anycast_rp_peer",
-            "nxos:nxos/getPimInstance:getPimInstance": "nxos_pim_instance",
-            "nxos:nxos/getPimInterface:getPimInterface": "nxos_pim_interface",
-            "nxos:nxos/getPimSsmPolicy:getPimSsmPolicy": "nxos_pim_ssm_policy",
-            "nxos:nxos/getPimSsmRange:getPimSsmRange": "nxos_pim_ssm_range",
-            "nxos:nxos/getPimStaticRp:getPimStaticRp": "nxos_pim_static_rp",
-            "nxos:nxos/getPimStaticRpGroupList:getPimStaticRpGroupList": "nxos_pim_static_rp_group_list",
-            "nxos:nxos/getPimStaticRpPolicy:getPimStaticRpPolicy": "nxos_pim_static_rp_policy",
-            "nxos:nxos/getPimVrf:getPimVrf": "nxos_pim_vrf",
-            "nxos:nxos/getPortChannelInterface:getPortChannelInterface": "nxos_port_channel_interface",
-            "nxos:nxos/getPortChannelInterfaceMember:getPortChannelInterfaceMember": "nxos_port_channel_interface_member",
-            "nxos:nxos/getPortChannelInterfaceVrf:getPortChannelInterfaceVrf": "nxos_port_channel_interface_vrf",
-            "nxos:nxos/getQueuingQosPolicyMap:getQueuingQosPolicyMap": "nxos_queuing_qos_policy_map",
-            "nxos:nxos/getQueuingQosPolicyMapMatchClassMap:getQueuingQosPolicyMapMatchClassMap": "nxos_queuing_qos_policy_map_match_class_map",
-            "nxos:nxos/getQueuingQosPolicyMapMatchClassMapPriority:getQueuingQosPolicyMapMatchClassMapPriority": "nxos_queuing_qos_policy_map_match_class_map_priority",
-            "nxos:nxos/getQueuingQosPolicyMapMatchClassMapRemainingBandwidth:getQueuingQosPolicyMapMatchClassMapRemainingBandwidth": "nxos_queuing_qos_policy_map_match_class_map_remaining_bandwidth",
-            "nxos:nxos/getQueuingQosPolicySystemOut:getQueuingQosPolicySystemOut": "nxos_queuing_qos_policy_system_out",
-            "nxos:nxos/getQueuingQosPolicySystemOutPolicyMap:getQueuingQosPolicySystemOutPolicyMap": "nxos_queuing_qos_policy_system_out_policy_map",
-            "nxos:nxos/getRest:getRest": "nxos_rest",
-            "nxos:nxos/getRouteMapRule:getRouteMapRule": "nxos_route_map_rule",
-            "nxos:nxos/getRouteMapRuleEntry:getRouteMapRuleEntry": "nxos_route_map_rule_entry",
-            "nxos:nxos/getRouteMapRuleEntryMatchRoute:getRouteMapRuleEntryMatchRoute": "nxos_route_map_rule_entry_match_route",
-            "nxos:nxos/getRouteMapRuleEntryMatchRoutePrefixList:getRouteMapRuleEntryMatchRoutePrefixList": "nxos_route_map_rule_entry_match_route_prefix_list",
-            "nxos:nxos/getRouteMapRuleEntrySetRegularCommunity:getRouteMapRuleEntrySetRegularCommunity": "nxos_route_map_rule_entry_set_regular_community",
-            "nxos:nxos/getRouteMapRuleEntrySetRegularCommunityItem:getRouteMapRuleEntrySetRegularCommunityItem": "nxos_route_map_rule_entry_set_regular_community_item",
-            "nxos:nxos/getSpanningTreeInterface:getSpanningTreeInterface": "nxos_spanning_tree_interface",
-            "nxos:nxos/getSubinterface:getSubinterface": "nxos_subinterface",
-            "nxos:nxos/getSubinterfaceVrf:getSubinterfaceVrf": "nxos_subinterface_vrf",
-            "nxos:nxos/getSviInterface:getSviInterface": "nxos_svi_interface",
-            "nxos:nxos/getSviInterfaceVrf:getSviInterfaceVrf": "nxos_svi_interface_vrf",
-            "nxos:nxos/getSystem:getSystem": "nxos_system",
-            "nxos:nxos/getVpcDomain:getVpcDomain": "nxos_vpc_domain",
-            "nxos:nxos/getVpcInstance:getVpcInstance": "nxos_vpc_instance",
-            "nxos:nxos/getVpcInterface:getVpcInterface": "nxos_vpc_interface",
-            "nxos:nxos/getVrf:getVrf": "nxos_vrf",
-            "nxos:nxos/getVrfAddressFamily:getVrfAddressFamily": "nxos_vrf_address_family",
-            "nxos:nxos/getVrfRouteTarget:getVrfRouteTarget": "nxos_vrf_route_target",
-            "nxos:nxos/getVrfRouteTargetAddressFamily:getVrfRouteTargetAddressFamily": "nxos_vrf_route_target_address_family",
-            "nxos:nxos/getVrfRouteTargetDirection:getVrfRouteTargetDirection": "nxos_vrf_route_target_direction",
-            "nxos:nxos/getVrfRouting:getVrfRouting": "nxos_vrf_routing"
+            "nxos:index/getBgp:getBgp": "nxos_bgp",
+            "nxos:index/getBgpAddressFamily:getBgpAddressFamily": "nxos_bgp_address_family",
+            "nxos:index/getBgpAdvertisedPrefix:getBgpAdvertisedPrefix": "nxos_bgp_advertised_prefix",
+            "nxos:index/getBgpGracefulRestart:getBgpGracefulRestart": "nxos_bgp_graceful_restart",
+            "nxos:index/getBgpInstance:getBgpInstance": "nxos_bgp_instance",
+            "nxos:index/getBgpPeer:getBgpPeer": "nxos_bgp_peer",
+            "nxos:index/getBgpPeerAddressFamily:getBgpPeerAddressFamily": "nxos_bgp_peer_address_family",
+            "nxos:index/getBgpPeerAddressFamilyPrefixListControl:getBgpPeerAddressFamilyPrefixListControl": "nxos_bgp_peer_address_family_prefix_list_control",
+            "nxos:index/getBgpPeerAddressFamilyRouteControl:getBgpPeerAddressFamilyRouteControl": "nxos_bgp_peer_address_family_route_control",
+            "nxos:index/getBgpPeerTemplate:getBgpPeerTemplate": "nxos_bgp_peer_template",
+            "nxos:index/getBgpPeerTemplateAddressFamily:getBgpPeerTemplateAddressFamily": "nxos_bgp_peer_template_address_family",
+            "nxos:index/getBgpPeerTemplateMaxPrefix:getBgpPeerTemplateMaxPrefix": "nxos_bgp_peer_template_max_prefix",
+            "nxos:index/getBgpRouteControl:getBgpRouteControl": "nxos_bgp_route_control",
+            "nxos:index/getBgpVrf:getBgpVrf": "nxos_bgp_vrf",
+            "nxos:index/getBridgeDomain:getBridgeDomain": "nxos_bridge_domain",
+            "nxos:index/getDefaultQosClassMap:getDefaultQosClassMap": "nxos_default_qos_class_map",
+            "nxos:index/getDefaultQosClassMapDscp:getDefaultQosClassMapDscp": "nxos_default_qos_class_map_dscp",
+            "nxos:index/getDefaultQosPolicyInterfaceIn:getDefaultQosPolicyInterfaceIn": "nxos_default_qos_policy_interface_in",
+            "nxos:index/getDefaultQosPolicyInterfaceInPolicyMap:getDefaultQosPolicyInterfaceInPolicyMap": "nxos_default_qos_policy_interface_in_policy_map",
+            "nxos:index/getDefaultQosPolicyMap:getDefaultQosPolicyMap": "nxos_default_qos_policy_map",
+            "nxos:index/getDefaultQosPolicyMapMatchClassMap:getDefaultQosPolicyMapMatchClassMap": "nxos_default_qos_policy_map_match_class_map",
+            "nxos:index/getDefaultQosPolicyMapMatchClassMapPolice:getDefaultQosPolicyMapMatchClassMapPolice": "nxos_default_qos_policy_map_match_class_map_police",
+            "nxos:index/getDefaultQosPolicyMapMatchClassMapSetQosGroup:getDefaultQosPolicyMapMatchClassMapSetQosGroup": "nxos_default_qos_policy_map_match_class_map_set_qos_group",
+            "nxos:index/getDhcpRelayAddress:getDhcpRelayAddress": "nxos_dhcp_relay_address",
+            "nxos:index/getDhcpRelayInterface:getDhcpRelayInterface": "nxos_dhcp_relay_interface",
+            "nxos:index/getEthernet:getEthernet": "nxos_ethernet",
+            "nxos:index/getEvpn:getEvpn": "nxos_evpn",
+            "nxos:index/getEvpnVni:getEvpnVni": "nxos_evpn_vni",
+            "nxos:index/getEvpnVniRouteTarget:getEvpnVniRouteTarget": "nxos_evpn_vni_route_target",
+            "nxos:index/getEvpnVniRouteTargetDirection:getEvpnVniRouteTargetDirection": "nxos_evpn_vni_route_target_direction",
+            "nxos:index/getFeatureBfd:getFeatureBfd": "nxos_feature_bfd",
+            "nxos:index/getFeatureBgp:getFeatureBgp": "nxos_feature_bgp",
+            "nxos:index/getFeatureDhcp:getFeatureDhcp": "nxos_feature_dhcp",
+            "nxos:index/getFeatureEvpn:getFeatureEvpn": "nxos_feature_evpn",
+            "nxos:index/getFeatureHmm:getFeatureHmm": "nxos_feature_hmm",
+            "nxos:index/getFeatureHsrp:getFeatureHsrp": "nxos_feature_hsrp",
+            "nxos:index/getFeatureInterfaceVlan:getFeatureInterfaceVlan": "nxos_feature_interface_vlan",
+            "nxos:index/getFeatureIsis:getFeatureIsis": "nxos_feature_isis",
+            "nxos:index/getFeatureLacp:getFeatureLacp": "nxos_feature_lacp",
+            "nxos:index/getFeatureLldp:getFeatureLldp": "nxos_feature_lldp",
+            "nxos:index/getFeatureMacsec:getFeatureMacsec": "nxos_feature_macsec",
+            "nxos:index/getFeatureNetflow:getFeatureNetflow": "nxos_feature_netflow",
+            "nxos:index/getFeatureNvOverlay:getFeatureNvOverlay": "nxos_feature_nv_overlay",
+            "nxos:index/getFeatureOspf:getFeatureOspf": "nxos_feature_ospf",
+            "nxos:index/getFeatureOspfv3:getFeatureOspfv3": "nxos_feature_ospfv3",
+            "nxos:index/getFeaturePim:getFeaturePim": "nxos_feature_pim",
+            "nxos:index/getFeaturePtp:getFeaturePtp": "nxos_feature_ptp",
+            "nxos:index/getFeaturePvlan:getFeaturePvlan": "nxos_feature_pvlan",
+            "nxos:index/getFeatureSsh:getFeatureSsh": "nxos_feature_ssh",
+            "nxos:index/getFeatureTacacs:getFeatureTacacs": "nxos_feature_tacacs",
+            "nxos:index/getFeatureTelnet:getFeatureTelnet": "nxos_feature_telnet",
+            "nxos:index/getFeatureUdld:getFeatureUdld": "nxos_feature_udld",
+            "nxos:index/getFeatureVnSegment:getFeatureVnSegment": "nxos_feature_vn_segment",
+            "nxos:index/getFeatureVpc:getFeatureVpc": "nxos_feature_vpc",
+            "nxos:index/getHmm:getHmm": "nxos_hmm",
+            "nxos:index/getHmmInstance:getHmmInstance": "nxos_hmm_instance",
+            "nxos:index/getHmmInterface:getHmmInterface": "nxos_hmm_interface",
+            "nxos:index/getIpv4AccessList:getIpv4AccessList": "nxos_ipv4_access_list",
+            "nxos:index/getIpv4AccessListEntry:getIpv4AccessListEntry": "nxos_ipv4_access_list_entry",
+            "nxos:index/getIpv4AccessListPolicyEgressInterface:getIpv4AccessListPolicyEgressInterface": "nxos_ipv4_access_list_policy_egress_interface",
+            "nxos:index/getIpv4AccessListPolicyIngressInterface:getIpv4AccessListPolicyIngressInterface": "nxos_ipv4_access_list_policy_ingress_interface",
+            "nxos:index/getIpv4Interface:getIpv4Interface": "nxos_ipv4_interface",
+            "nxos:index/getIpv4InterfaceAddress:getIpv4InterfaceAddress": "nxos_ipv4_interface_address",
+            "nxos:index/getIpv4PrefixListRule:getIpv4PrefixListRule": "nxos_ipv4_prefix_list_rule",
+            "nxos:index/getIpv4PrefixListRuleEntry:getIpv4PrefixListRuleEntry": "nxos_ipv4_prefix_list_rule_entry",
+            "nxos:index/getIpv4StaticRoute:getIpv4StaticRoute": "nxos_ipv4_static_route",
+            "nxos:index/getIpv4Vrf:getIpv4Vrf": "nxos_ipv4_vrf",
+            "nxos:index/getIsis:getIsis": "nxos_isis",
+            "nxos:index/getIsisInstance:getIsisInstance": "nxos_isis_instance",
+            "nxos:index/getIsisInterface:getIsisInterface": "nxos_isis_interface",
+            "nxos:index/getIsisVrf:getIsisVrf": "nxos_isis_vrf",
+            "nxos:index/getLoopbackInterface:getLoopbackInterface": "nxos_loopback_interface",
+            "nxos:index/getLoopbackInterfaceVrf:getLoopbackInterfaceVrf": "nxos_loopback_interface_vrf",
+            "nxos:index/getNtpServer:getNtpServer": "nxos_ntp_server",
+            "nxos:index/getNveInterface:getNveInterface": "nxos_nve_interface",
+            "nxos:index/getNveVni:getNveVni": "nxos_nve_vni",
+            "nxos:index/getNveVniContainer:getNveVniContainer": "nxos_nve_vni_container",
+            "nxos:index/getNveVniIngressReplication:getNveVniIngressReplication": "nxos_nve_vni_ingress_replication",
+            "nxos:index/getOspf:getOspf": "nxos_ospf",
+            "nxos:index/getOspfArea:getOspfArea": "nxos_ospf_area",
+            "nxos:index/getOspfAuthentication:getOspfAuthentication": "nxos_ospf_authentication",
+            "nxos:index/getOspfInstance:getOspfInstance": "nxos_ospf_instance",
+            "nxos:index/getOspfInterface:getOspfInterface": "nxos_ospf_interface",
+            "nxos:index/getOspfVrf:getOspfVrf": "nxos_ospf_vrf",
+            "nxos:index/getPhysicalInterface:getPhysicalInterface": "nxos_physical_interface",
+            "nxos:index/getPhysicalInterfaceVrf:getPhysicalInterfaceVrf": "nxos_physical_interface_vrf",
+            "nxos:index/getPim:getPim": "nxos_pim",
+            "nxos:index/getPimAnycastRp:getPimAnycastRp": "nxos_pim_anycast_rp",
+            "nxos:index/getPimAnycastRpPeer:getPimAnycastRpPeer": "nxos_pim_anycast_rp_peer",
+            "nxos:index/getPimInstance:getPimInstance": "nxos_pim_instance",
+            "nxos:index/getPimInterface:getPimInterface": "nxos_pim_interface",
+            "nxos:index/getPimSsmPolicy:getPimSsmPolicy": "nxos_pim_ssm_policy",
+            "nxos:index/getPimSsmRange:getPimSsmRange": "nxos_pim_ssm_range",
+            "nxos:index/getPimStaticRp:getPimStaticRp": "nxos_pim_static_rp",
+            "nxos:index/getPimStaticRpGroupList:getPimStaticRpGroupList": "nxos_pim_static_rp_group_list",
+            "nxos:index/getPimStaticRpPolicy:getPimStaticRpPolicy": "nxos_pim_static_rp_policy",
+            "nxos:index/getPimVrf:getPimVrf": "nxos_pim_vrf",
+            "nxos:index/getPortChannelInterface:getPortChannelInterface": "nxos_port_channel_interface",
+            "nxos:index/getPortChannelInterfaceMember:getPortChannelInterfaceMember": "nxos_port_channel_interface_member",
+            "nxos:index/getPortChannelInterfaceVrf:getPortChannelInterfaceVrf": "nxos_port_channel_interface_vrf",
+            "nxos:index/getQueuingQosPolicyMap:getQueuingQosPolicyMap": "nxos_queuing_qos_policy_map",
+            "nxos:index/getQueuingQosPolicyMapMatchClassMap:getQueuingQosPolicyMapMatchClassMap": "nxos_queuing_qos_policy_map_match_class_map",
+            "nxos:index/getQueuingQosPolicyMapMatchClassMapPriority:getQueuingQosPolicyMapMatchClassMapPriority": "nxos_queuing_qos_policy_map_match_class_map_priority",
+            "nxos:index/getQueuingQosPolicyMapMatchClassMapRemainingBandwidth:getQueuingQosPolicyMapMatchClassMapRemainingBandwidth": "nxos_queuing_qos_policy_map_match_class_map_remaining_bandwidth",
+            "nxos:index/getQueuingQosPolicySystemOut:getQueuingQosPolicySystemOut": "nxos_queuing_qos_policy_system_out",
+            "nxos:index/getQueuingQosPolicySystemOutPolicyMap:getQueuingQosPolicySystemOutPolicyMap": "nxos_queuing_qos_policy_system_out_policy_map",
+            "nxos:index/getRest:getRest": "nxos_rest",
+            "nxos:index/getRouteMapRule:getRouteMapRule": "nxos_route_map_rule",
+            "nxos:index/getRouteMapRuleEntry:getRouteMapRuleEntry": "nxos_route_map_rule_entry",
+            "nxos:index/getRouteMapRuleEntryMatchRoute:getRouteMapRuleEntryMatchRoute": "nxos_route_map_rule_entry_match_route",
+            "nxos:index/getRouteMapRuleEntryMatchRoutePrefixList:getRouteMapRuleEntryMatchRoutePrefixList": "nxos_route_map_rule_entry_match_route_prefix_list",
+            "nxos:index/getRouteMapRuleEntrySetRegularCommunity:getRouteMapRuleEntrySetRegularCommunity": "nxos_route_map_rule_entry_set_regular_community",
+            "nxos:index/getRouteMapRuleEntrySetRegularCommunityItem:getRouteMapRuleEntrySetRegularCommunityItem": "nxos_route_map_rule_entry_set_regular_community_item",
+            "nxos:index/getSpanningTreeInterface:getSpanningTreeInterface": "nxos_spanning_tree_interface",
+            "nxos:index/getSubinterface:getSubinterface": "nxos_subinterface",
+            "nxos:index/getSubinterfaceVrf:getSubinterfaceVrf": "nxos_subinterface_vrf",
+            "nxos:index/getSviInterface:getSviInterface": "nxos_svi_interface",
+            "nxos:index/getSviInterfaceVrf:getSviInterfaceVrf": "nxos_svi_interface_vrf",
+            "nxos:index/getSystem:getSystem": "nxos_system",
+            "nxos:index/getVpcDomain:getVpcDomain": "nxos_vpc_domain",
+            "nxos:index/getVpcInstance:getVpcInstance": "nxos_vpc_instance",
+            "nxos:index/getVpcInterface:getVpcInterface": "nxos_vpc_interface",
+            "nxos:index/getVrf:getVrf": "nxos_vrf",
+            "nxos:index/getVrfAddressFamily:getVrfAddressFamily": "nxos_vrf_address_family",
+            "nxos:index/getVrfRouteTarget:getVrfRouteTarget": "nxos_vrf_route_target",
+            "nxos:index/getVrfRouteTargetAddressFamily:getVrfRouteTargetAddressFamily": "nxos_vrf_route_target_address_family",
+            "nxos:index/getVrfRouteTargetDirection:getVrfRouteTargetDirection": "nxos_vrf_route_target_direction",
+            "nxos:index/getVrfRouting:getVrfRouting": "nxos_vrf_routing"
         },
         "renamedProperties": {
-            "nxos:nxos/Ipv4StaticRouteNextHop:Ipv4StaticRouteNextHop": {
+            "nxos:index/Ipv4StaticRouteNextHop:Ipv4StaticRouteNextHop": {
                 "interfaceId": "interface_id",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/RestChildren:RestChildren": {
+            "nxos:index/RestChildren:RestChildren": {
                 "className": "class_name"
             },
-            "nxos:nxos/bgp:Bgp": {
+            "nxos:index/bgp:Bgp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/bgpAddressFamily:BgpAddressFamily": {
+            "nxos:index/bgpAddressFamily:BgpAddressFamily": {
                 "addressFamily": "address_family",
                 "criticalNexthopTimeout": "critical_nexthop_timeout",
                 "nonCriticalNexthopTimeout": "non_critical_nexthop_timeout"
             },
-            "nxos:nxos/bgpAdvertisedPrefix:BgpAdvertisedPrefix": {
+            "nxos:index/bgpAdvertisedPrefix:BgpAdvertisedPrefix": {
                 "addressFamily": "address_family",
                 "routeMap": "route_map"
             },
-            "nxos:nxos/bgpGracefulRestart:BgpGracefulRestart": {
+            "nxos:index/bgpGracefulRestart:BgpGracefulRestart": {
                 "restartInterval": "restart_interval",
                 "staleInterval": "stale_interval"
             },
-            "nxos:nxos/bgpInstance:BgpInstance": {
+            "nxos:index/bgpInstance:BgpInstance": {
                 "adminState": "admin_state",
                 "enhancedErrorHandling": "enhanced_error_handling"
             },
-            "nxos:nxos/bgpPeer:BgpPeer": {
+            "nxos:index/bgpPeer:BgpPeer": {
                 "holdTime": "hold_time",
                 "peerTemplate": "peer_template",
                 "peerType": "peer_type",
                 "remoteAsn": "remote_asn",
                 "sourceInterface": "source_interface"
             },
-            "nxos:nxos/bgpPeerAddressFamily:BgpPeerAddressFamily": {
+            "nxos:index/bgpPeerAddressFamily:BgpPeerAddressFamily": {
                 "addressFamily": "address_family",
                 "sendCommunityExtended": "send_community_extended",
                 "sendCommunityStandard": "send_community_standard"
             },
-            "nxos:nxos/bgpPeerAddressFamilyPrefixListControl:BgpPeerAddressFamilyPrefixListControl": {
+            "nxos:index/bgpPeerAddressFamilyPrefixListControl:BgpPeerAddressFamilyPrefixListControl": {
                 "addressFamily": "address_family"
             },
-            "nxos:nxos/bgpPeerAddressFamilyRouteControl:BgpPeerAddressFamilyRouteControl": {
+            "nxos:index/bgpPeerAddressFamilyRouteControl:BgpPeerAddressFamilyRouteControl": {
                 "addressFamily": "address_family",
                 "routeMapName": "route_map_name"
             },
-            "nxos:nxos/bgpPeerTemplate:BgpPeerTemplate": {
+            "nxos:index/bgpPeerTemplate:BgpPeerTemplate": {
                 "peerType": "peer_type",
                 "remoteAsn": "remote_asn",
                 "sourceInterface": "source_interface",
                 "templateName": "template_name"
             },
-            "nxos:nxos/bgpPeerTemplateAddressFamily:BgpPeerTemplateAddressFamily": {
+            "nxos:index/bgpPeerTemplateAddressFamily:BgpPeerTemplateAddressFamily": {
                 "addressFamily": "address_family",
                 "sendCommunityExtended": "send_community_extended",
                 "sendCommunityStandard": "send_community_standard",
                 "templateName": "template_name"
             },
-            "nxos:nxos/bgpPeerTemplateMaxPrefix:BgpPeerTemplateMaxPrefix": {
+            "nxos:index/bgpPeerTemplateMaxPrefix:BgpPeerTemplateMaxPrefix": {
                 "addressFamily": "address_family",
                 "maximumPrefix": "maximum_prefix",
                 "restartTime": "restart_time",
                 "templateName": "template_name"
             },
-            "nxos:nxos/bgpRouteControl:BgpRouteControl": {
+            "nxos:index/bgpRouteControl:BgpRouteControl": {
                 "enforceFirstAs": "enforce_first_as",
                 "fibAccelerate": "fib_accelerate",
                 "logNeighborChanges": "log_neighbor_changes",
                 "suppressRoutes": "suppress_routes"
             },
-            "nxos:nxos/bgpVrf:BgpVrf": {
+            "nxos:index/bgpVrf:BgpVrf": {
                 "routerId": "router_id"
             },
-            "nxos:nxos/bridgeDomain:BridgeDomain": {
+            "nxos:index/bridgeDomain:BridgeDomain": {
                 "accessEncap": "access_encap",
                 "fabricEncap": "fabric_encap"
             },
-            "nxos:nxos/defaultQosClassMap:DefaultQosClassMap": {
+            "nxos:index/defaultQosClassMap:DefaultQosClassMap": {
                 "matchType": "match_type"
             },
-            "nxos:nxos/defaultQosClassMapDscp:DefaultQosClassMapDscp": {
+            "nxos:index/defaultQosClassMapDscp:DefaultQosClassMapDscp": {
                 "classMapName": "class_map_name"
             },
-            "nxos:nxos/defaultQosPolicyInterfaceIn:DefaultQosPolicyInterfaceIn": {
+            "nxos:index/defaultQosPolicyInterfaceIn:DefaultQosPolicyInterfaceIn": {
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/defaultQosPolicyInterfaceInPolicyMap:DefaultQosPolicyInterfaceInPolicyMap": {
+            "nxos:index/defaultQosPolicyInterfaceInPolicyMap:DefaultQosPolicyInterfaceInPolicyMap": {
                 "interfaceId": "interface_id",
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/defaultQosPolicyMap:DefaultQosPolicyMap": {
+            "nxos:index/defaultQosPolicyMap:DefaultQosPolicyMap": {
                 "matchType": "match_type"
             },
-            "nxos:nxos/defaultQosPolicyMapMatchClassMap:DefaultQosPolicyMapMatchClassMap": {
+            "nxos:index/defaultQosPolicyMapMatchClassMap:DefaultQosPolicyMapMatchClassMap": {
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/defaultQosPolicyMapMatchClassMapPolice:DefaultQosPolicyMapMatchClassMapPolice": {
+            "nxos:index/defaultQosPolicyMapMatchClassMapPolice:DefaultQosPolicyMapMatchClassMapPolice": {
                 "bcRate": "bc_rate",
                 "bcUnit": "bc_unit",
                 "beRate": "be_rate",
@@ -384,188 +1173,188 @@
                 "violateSetPrecedence": "violate_set_precedence",
                 "violateSetQosGroup": "violate_set_qos_group"
             },
-            "nxos:nxos/defaultQosPolicyMapMatchClassMapSetQosGroup:DefaultQosPolicyMapMatchClassMapSetQosGroup": {
+            "nxos:index/defaultQosPolicyMapMatchClassMapSetQosGroup:DefaultQosPolicyMapMatchClassMapSetQosGroup": {
                 "classMapName": "class_map_name",
                 "policyMapName": "policy_map_name",
                 "qosGroupId": "qos_group_id"
             },
-            "nxos:nxos/dhcpRelayAddress:DhcpRelayAddress": {
+            "nxos:index/dhcpRelayAddress:DhcpRelayAddress": {
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/dhcpRelayInterface:DhcpRelayInterface": {
+            "nxos:index/dhcpRelayInterface:DhcpRelayInterface": {
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/evpn:Evpn": {
+            "nxos:index/evpn:Evpn": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/evpnVni:EvpnVni": {
+            "nxos:index/evpnVni:EvpnVni": {
                 "routeDistinguisher": "route_distinguisher"
             },
-            "nxos:nxos/evpnVniRouteTarget:EvpnVniRouteTarget": {
+            "nxos:index/evpnVniRouteTarget:EvpnVniRouteTarget": {
                 "routeTarget": "route_target"
             },
-            "nxos:nxos/featureBfd:FeatureBfd": {
+            "nxos:index/featureBfd:FeatureBfd": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureBgp:FeatureBgp": {
+            "nxos:index/featureBgp:FeatureBgp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureDhcp:FeatureDhcp": {
+            "nxos:index/featureDhcp:FeatureDhcp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureEvpn:FeatureEvpn": {
+            "nxos:index/featureEvpn:FeatureEvpn": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureHmm:FeatureHmm": {
+            "nxos:index/featureHmm:FeatureHmm": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureHsrp:FeatureHsrp": {
+            "nxos:index/featureHsrp:FeatureHsrp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureInterfaceVlan:FeatureInterfaceVlan": {
+            "nxos:index/featureInterfaceVlan:FeatureInterfaceVlan": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureIsis:FeatureIsis": {
+            "nxos:index/featureIsis:FeatureIsis": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureLacp:FeatureLacp": {
+            "nxos:index/featureLacp:FeatureLacp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureLldp:FeatureLldp": {
+            "nxos:index/featureLldp:FeatureLldp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureMacsec:FeatureMacsec": {
+            "nxos:index/featureMacsec:FeatureMacsec": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureNetflow:FeatureNetflow": {
+            "nxos:index/featureNetflow:FeatureNetflow": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureNvOverlay:FeatureNvOverlay": {
+            "nxos:index/featureNvOverlay:FeatureNvOverlay": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureOspf:FeatureOspf": {
+            "nxos:index/featureOspf:FeatureOspf": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureOspfv3:FeatureOspfv3": {
+            "nxos:index/featureOspfv3:FeatureOspfv3": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featurePim:FeaturePim": {
+            "nxos:index/featurePim:FeaturePim": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featurePtp:FeaturePtp": {
+            "nxos:index/featurePtp:FeaturePtp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featurePvlan:FeaturePvlan": {
+            "nxos:index/featurePvlan:FeaturePvlan": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureSsh:FeatureSsh": {
+            "nxos:index/featureSsh:FeatureSsh": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureTacacs:FeatureTacacs": {
+            "nxos:index/featureTacacs:FeatureTacacs": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureTelnet:FeatureTelnet": {
+            "nxos:index/featureTelnet:FeatureTelnet": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureUdld:FeatureUdld": {
+            "nxos:index/featureUdld:FeatureUdld": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureVnSegment:FeatureVnSegment": {
+            "nxos:index/featureVnSegment:FeatureVnSegment": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/featureVpc:FeatureVpc": {
+            "nxos:index/featureVpc:FeatureVpc": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getBgp:getBgp": {
+            "nxos:index/getBgp:getBgp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getBgpAddressFamily:getBgpAddressFamily": {
+            "nxos:index/getBgpAddressFamily:getBgpAddressFamily": {
                 "addressFamily": "address_family",
                 "criticalNexthopTimeout": "critical_nexthop_timeout",
                 "nonCriticalNexthopTimeout": "non_critical_nexthop_timeout"
             },
-            "nxos:nxos/getBgpAdvertisedPrefix:getBgpAdvertisedPrefix": {
+            "nxos:index/getBgpAdvertisedPrefix:getBgpAdvertisedPrefix": {
                 "addressFamily": "address_family",
                 "routeMap": "route_map"
             },
-            "nxos:nxos/getBgpGracefulRestart:getBgpGracefulRestart": {
+            "nxos:index/getBgpGracefulRestart:getBgpGracefulRestart": {
                 "restartInterval": "restart_interval",
                 "staleInterval": "stale_interval"
             },
-            "nxos:nxos/getBgpInstance:getBgpInstance": {
+            "nxos:index/getBgpInstance:getBgpInstance": {
                 "adminState": "admin_state",
                 "enhancedErrorHandling": "enhanced_error_handling"
             },
-            "nxos:nxos/getBgpPeer:getBgpPeer": {
+            "nxos:index/getBgpPeer:getBgpPeer": {
                 "holdTime": "hold_time",
                 "peerTemplate": "peer_template",
                 "peerType": "peer_type",
                 "remoteAsn": "remote_asn",
                 "sourceInterface": "source_interface"
             },
-            "nxos:nxos/getBgpPeerAddressFamily:getBgpPeerAddressFamily": {
+            "nxos:index/getBgpPeerAddressFamily:getBgpPeerAddressFamily": {
                 "addressFamily": "address_family",
                 "sendCommunityExtended": "send_community_extended",
                 "sendCommunityStandard": "send_community_standard"
             },
-            "nxos:nxos/getBgpPeerAddressFamilyPrefixListControl:getBgpPeerAddressFamilyPrefixListControl": {
+            "nxos:index/getBgpPeerAddressFamilyPrefixListControl:getBgpPeerAddressFamilyPrefixListControl": {
                 "addressFamily": "address_family"
             },
-            "nxos:nxos/getBgpPeerAddressFamilyRouteControl:getBgpPeerAddressFamilyRouteControl": {
+            "nxos:index/getBgpPeerAddressFamilyRouteControl:getBgpPeerAddressFamilyRouteControl": {
                 "addressFamily": "address_family",
                 "routeMapName": "route_map_name"
             },
-            "nxos:nxos/getBgpPeerTemplate:getBgpPeerTemplate": {
+            "nxos:index/getBgpPeerTemplate:getBgpPeerTemplate": {
                 "peerType": "peer_type",
                 "remoteAsn": "remote_asn",
                 "sourceInterface": "source_interface",
                 "templateName": "template_name"
             },
-            "nxos:nxos/getBgpPeerTemplateAddressFamily:getBgpPeerTemplateAddressFamily": {
+            "nxos:index/getBgpPeerTemplateAddressFamily:getBgpPeerTemplateAddressFamily": {
                 "addressFamily": "address_family",
                 "sendCommunityExtended": "send_community_extended",
                 "sendCommunityStandard": "send_community_standard",
                 "templateName": "template_name"
             },
-            "nxos:nxos/getBgpPeerTemplateMaxPrefix:getBgpPeerTemplateMaxPrefix": {
+            "nxos:index/getBgpPeerTemplateMaxPrefix:getBgpPeerTemplateMaxPrefix": {
                 "addressFamily": "address_family",
                 "maximumPrefix": "maximum_prefix",
                 "restartTime": "restart_time",
                 "templateName": "template_name"
             },
-            "nxos:nxos/getBgpRouteControl:getBgpRouteControl": {
+            "nxos:index/getBgpRouteControl:getBgpRouteControl": {
                 "enforceFirstAs": "enforce_first_as",
                 "fibAccelerate": "fib_accelerate",
                 "logNeighborChanges": "log_neighbor_changes",
                 "suppressRoutes": "suppress_routes"
             },
-            "nxos:nxos/getBgpVrf:getBgpVrf": {
+            "nxos:index/getBgpVrf:getBgpVrf": {
                 "routerId": "router_id"
             },
-            "nxos:nxos/getBridgeDomain:getBridgeDomain": {
+            "nxos:index/getBridgeDomain:getBridgeDomain": {
                 "accessEncap": "access_encap",
                 "fabricEncap": "fabric_encap"
             },
-            "nxos:nxos/getDefaultQosClassMap:getDefaultQosClassMap": {
+            "nxos:index/getDefaultQosClassMap:getDefaultQosClassMap": {
                 "matchType": "match_type"
             },
-            "nxos:nxos/getDefaultQosClassMapDscp:getDefaultQosClassMapDscp": {
+            "nxos:index/getDefaultQosClassMapDscp:getDefaultQosClassMapDscp": {
                 "classMapName": "class_map_name"
             },
-            "nxos:nxos/getDefaultQosPolicyInterfaceIn:getDefaultQosPolicyInterfaceIn": {
+            "nxos:index/getDefaultQosPolicyInterfaceIn:getDefaultQosPolicyInterfaceIn": {
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getDefaultQosPolicyInterfaceInPolicyMap:getDefaultQosPolicyInterfaceInPolicyMap": {
+            "nxos:index/getDefaultQosPolicyInterfaceInPolicyMap:getDefaultQosPolicyInterfaceInPolicyMap": {
                 "interfaceId": "interface_id",
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/getDefaultQosPolicyMap:getDefaultQosPolicyMap": {
+            "nxos:index/getDefaultQosPolicyMap:getDefaultQosPolicyMap": {
                 "matchType": "match_type"
             },
-            "nxos:nxos/getDefaultQosPolicyMapMatchClassMap:getDefaultQosPolicyMapMatchClassMap": {
+            "nxos:index/getDefaultQosPolicyMapMatchClassMap:getDefaultQosPolicyMapMatchClassMap": {
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/getDefaultQosPolicyMapMatchClassMapPolice:getDefaultQosPolicyMapMatchClassMapPolice": {
+            "nxos:index/getDefaultQosPolicyMapMatchClassMapPolice:getDefaultQosPolicyMapMatchClassMapPolice": {
                 "bcRate": "bc_rate",
                 "bcUnit": "bc_unit",
                 "beRate": "be_rate",
@@ -592,110 +1381,110 @@
                 "violateSetPrecedence": "violate_set_precedence",
                 "violateSetQosGroup": "violate_set_qos_group"
             },
-            "nxos:nxos/getDefaultQosPolicyMapMatchClassMapSetQosGroup:getDefaultQosPolicyMapMatchClassMapSetQosGroup": {
+            "nxos:index/getDefaultQosPolicyMapMatchClassMapSetQosGroup:getDefaultQosPolicyMapMatchClassMapSetQosGroup": {
                 "classMapName": "class_map_name",
                 "policyMapName": "policy_map_name",
                 "qosGroupId": "qos_group_id"
             },
-            "nxos:nxos/getDhcpRelayAddress:getDhcpRelayAddress": {
+            "nxos:index/getDhcpRelayAddress:getDhcpRelayAddress": {
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getDhcpRelayInterface:getDhcpRelayInterface": {
+            "nxos:index/getDhcpRelayInterface:getDhcpRelayInterface": {
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getEvpn:getEvpn": {
+            "nxos:index/getEvpn:getEvpn": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getEvpnVni:getEvpnVni": {
+            "nxos:index/getEvpnVni:getEvpnVni": {
                 "routeDistinguisher": "route_distinguisher"
             },
-            "nxos:nxos/getEvpnVniRouteTarget:getEvpnVniRouteTarget": {
+            "nxos:index/getEvpnVniRouteTarget:getEvpnVniRouteTarget": {
                 "routeTarget": "route_target"
             },
-            "nxos:nxos/getFeatureBfd:getFeatureBfd": {
+            "nxos:index/getFeatureBfd:getFeatureBfd": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureBgp:getFeatureBgp": {
+            "nxos:index/getFeatureBgp:getFeatureBgp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureDhcp:getFeatureDhcp": {
+            "nxos:index/getFeatureDhcp:getFeatureDhcp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureEvpn:getFeatureEvpn": {
+            "nxos:index/getFeatureEvpn:getFeatureEvpn": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureHmm:getFeatureHmm": {
+            "nxos:index/getFeatureHmm:getFeatureHmm": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureHsrp:getFeatureHsrp": {
+            "nxos:index/getFeatureHsrp:getFeatureHsrp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureInterfaceVlan:getFeatureInterfaceVlan": {
+            "nxos:index/getFeatureInterfaceVlan:getFeatureInterfaceVlan": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureIsis:getFeatureIsis": {
+            "nxos:index/getFeatureIsis:getFeatureIsis": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureLacp:getFeatureLacp": {
+            "nxos:index/getFeatureLacp:getFeatureLacp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureLldp:getFeatureLldp": {
+            "nxos:index/getFeatureLldp:getFeatureLldp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureMacsec:getFeatureMacsec": {
+            "nxos:index/getFeatureMacsec:getFeatureMacsec": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureNetflow:getFeatureNetflow": {
+            "nxos:index/getFeatureNetflow:getFeatureNetflow": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureNvOverlay:getFeatureNvOverlay": {
+            "nxos:index/getFeatureNvOverlay:getFeatureNvOverlay": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureOspf:getFeatureOspf": {
+            "nxos:index/getFeatureOspf:getFeatureOspf": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureOspfv3:getFeatureOspfv3": {
+            "nxos:index/getFeatureOspfv3:getFeatureOspfv3": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeaturePim:getFeaturePim": {
+            "nxos:index/getFeaturePim:getFeaturePim": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeaturePtp:getFeaturePtp": {
+            "nxos:index/getFeaturePtp:getFeaturePtp": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeaturePvlan:getFeaturePvlan": {
+            "nxos:index/getFeaturePvlan:getFeaturePvlan": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureSsh:getFeatureSsh": {
+            "nxos:index/getFeatureSsh:getFeatureSsh": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureTacacs:getFeatureTacacs": {
+            "nxos:index/getFeatureTacacs:getFeatureTacacs": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureTelnet:getFeatureTelnet": {
+            "nxos:index/getFeatureTelnet:getFeatureTelnet": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureUdld:getFeatureUdld": {
+            "nxos:index/getFeatureUdld:getFeatureUdld": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureVnSegment:getFeatureVnSegment": {
+            "nxos:index/getFeatureVnSegment:getFeatureVnSegment": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getFeatureVpc:getFeatureVpc": {
+            "nxos:index/getFeatureVpc:getFeatureVpc": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getHmm:getHmm": {
+            "nxos:index/getHmm:getHmm": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getHmmInstance:getHmmInstance": {
+            "nxos:index/getHmmInstance:getHmmInstance": {
                 "adminState": "admin_state",
                 "anycastMac": "anycast_mac"
             },
-            "nxos:nxos/getHmmInterface:getHmmInterface": {
+            "nxos:index/getHmmInterface:getHmmInterface": {
                 "adminState": "admin_state",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getIpv4AccessListEntry:getIpv4AccessListEntry": {
+            "nxos:index/getIpv4AccessListEntry:getIpv4AccessListEntry": {
                 "destinationAddressGroup": "destination_address_group",
                 "destinationPort1": "destination_port_1",
                 "destinationPort2": "destination_port_2",
@@ -724,41 +1513,41 @@
                 "sourcePrefixMask": "source_prefix_mask",
                 "timeRange": "time_range"
             },
-            "nxos:nxos/getIpv4AccessListPolicyEgressInterface:getIpv4AccessListPolicyEgressInterface": {
+            "nxos:index/getIpv4AccessListPolicyEgressInterface:getIpv4AccessListPolicyEgressInterface": {
                 "accessListName": "access_list_name",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getIpv4AccessListPolicyIngressInterface:getIpv4AccessListPolicyIngressInterface": {
+            "nxos:index/getIpv4AccessListPolicyIngressInterface:getIpv4AccessListPolicyIngressInterface": {
                 "accessListName": "access_list_name",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getIpv4Interface:getIpv4Interface": {
+            "nxos:index/getIpv4Interface:getIpv4Interface": {
                 "dropGlean": "drop_glean",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getIpv4InterfaceAddress:getIpv4InterfaceAddress": {
+            "nxos:index/getIpv4InterfaceAddress:getIpv4InterfaceAddress": {
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getIpv4PrefixListRuleEntry:getIpv4PrefixListRuleEntry": {
+            "nxos:index/getIpv4PrefixListRuleEntry:getIpv4PrefixListRuleEntry": {
                 "fromRange": "from_range",
                 "ruleName": "rule_name",
                 "toRange": "to_range"
             },
-            "nxos:nxos/getIpv4StaticRoute:getIpv4StaticRoute": {
+            "nxos:index/getIpv4StaticRoute:getIpv4StaticRoute": {
                 "nextHops": "next_hops",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getIpv4StaticRouteNextHop:getIpv4StaticRouteNextHop": {
+            "nxos:index/getIpv4StaticRouteNextHop:getIpv4StaticRouteNextHop": {
                 "interfaceId": "interface_id",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getIsis:getIsis": {
+            "nxos:index/getIsis:getIsis": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getIsisInstance:getIsisInstance": {
+            "nxos:index/getIsisInstance:getIsisInstance": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getIsisInterface:getIsisInterface": {
+            "nxos:index/getIsisInterface:getIsisInterface": {
                 "authenticationCheck": "authentication_check",
                 "authenticationCheckL1": "authentication_check_l1",
                 "authenticationCheckL2": "authentication_check_l2",
@@ -786,7 +1575,7 @@
                 "priorityL1": "priority_l1",
                 "priorityL2": "priority_l2"
             },
-            "nxos:nxos/getIsisVrf:getIsisVrf": {
+            "nxos:index/getIsisVrf:getIsisVrf": {
                 "adminState": "admin_state",
                 "authenticationCheckL1": "authentication_check_l1",
                 "authenticationCheckL2": "authentication_check_l2",
@@ -801,20 +1590,20 @@
                 "metricType": "metric_type",
                 "passiveDefault": "passive_default"
             },
-            "nxos:nxos/getLoopbackInterface:getLoopbackInterface": {
+            "nxos:index/getLoopbackInterface:getLoopbackInterface": {
                 "adminState": "admin_state",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getLoopbackInterfaceVrf:getLoopbackInterfaceVrf": {
+            "nxos:index/getLoopbackInterfaceVrf:getLoopbackInterfaceVrf": {
                 "interfaceId": "interface_id",
                 "vrfDn": "vrf_dn"
             },
-            "nxos:nxos/getNtpServer:getNtpServer": {
+            "nxos:index/getNtpServer:getNtpServer": {
                 "keyId": "key_id",
                 "maxPoll": "max_poll",
                 "minPoll": "min_poll"
             },
-            "nxos:nxos/getNveInterface:getNveInterface": {
+            "nxos:index/getNveInterface:getNveInterface": {
                 "adminState": "admin_state",
                 "advertiseVirtualMac": "advertise_virtual_mac",
                 "holdDownTime": "hold_down_time",
@@ -827,22 +1616,22 @@
                 "suppressArp": "suppress_arp",
                 "suppressMacRoute": "suppress_mac_route"
             },
-            "nxos:nxos/getNveVni:getNveVni": {
+            "nxos:index/getNveVni:getNveVni": {
                 "associateVrf": "associate_vrf",
                 "multicastGroup": "multicast_group",
                 "multisiteIngressReplication": "multisite_ingress_replication",
                 "suppressArp": "suppress_arp"
             },
-            "nxos:nxos/getOspf:getOspf": {
+            "nxos:index/getOspf:getOspf": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getOspfArea:getOspfArea": {
+            "nxos:index/getOspfArea:getOspfArea": {
                 "areaId": "area_id",
                 "authenticationType": "authentication_type",
                 "instanceName": "instance_name",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getOspfAuthentication:getOspfAuthentication": {
+            "nxos:index/getOspfAuthentication:getOspfAuthentication": {
                 "instanceName": "instance_name",
                 "interfaceId": "interface_id",
                 "keyId": "key_id",
@@ -851,10 +1640,10 @@
                 "md5KeySecureMode": "md5_key_secure_mode",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getOspfInstance:getOspfInstance": {
+            "nxos:index/getOspfInstance:getOspfInstance": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getOspfInterface:getOspfInterface": {
+            "nxos:index/getOspfInterface:getOspfInterface": {
                 "advertiseSecondaries": "advertise_secondaries",
                 "deadInterval": "dead_interval",
                 "helloInterval": "hello_interval",
@@ -863,14 +1652,14 @@
                 "networkType": "network_type",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getOspfVrf:getOspfVrf": {
+            "nxos:index/getOspfVrf:getOspfVrf": {
                 "adminState": "admin_state",
                 "bandwidthReference": "bandwidth_reference",
                 "banwidthReferenceUnit": "banwidth_reference_unit",
                 "instanceName": "instance_name",
                 "routerId": "router_id"
             },
-            "nxos:nxos/getPhysicalInterface:getPhysicalInterface": {
+            "nxos:index/getPhysicalInterface:getPhysicalInterface": {
                 "accessVlan": "access_vlan",
                 "adminState": "admin_state",
                 "autoNegotiation": "auto_negotiation",
@@ -885,36 +1674,36 @@
                 "uniDirectionalEthernet": "uni_directional_ethernet",
                 "userConfiguredFlags": "user_configured_flags"
             },
-            "nxos:nxos/getPhysicalInterfaceVrf:getPhysicalInterfaceVrf": {
+            "nxos:index/getPhysicalInterfaceVrf:getPhysicalInterfaceVrf": {
                 "interfaceId": "interface_id",
                 "vrfDn": "vrf_dn"
             },
-            "nxos:nxos/getPim:getPim": {
+            "nxos:index/getPim:getPim": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getPimAnycastRp:getPimAnycastRp": {
+            "nxos:index/getPimAnycastRp:getPimAnycastRp": {
                 "localInterface": "local_interface",
                 "sourceInterface": "source_interface",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getPimAnycastRpPeer:getPimAnycastRpPeer": {
+            "nxos:index/getPimAnycastRpPeer:getPimAnycastRpPeer": {
                 "rpSetAddress": "rp_set_address",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getPimInstance:getPimInstance": {
+            "nxos:index/getPimInstance:getPimInstance": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getPimInterface:getPimInterface": {
+            "nxos:index/getPimInterface:getPimInterface": {
                 "adminState": "admin_state",
                 "drPriority": "dr_priority",
                 "interfaceId": "interface_id",
                 "sparseMode": "sparse_mode",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getPimSsmPolicy:getPimSsmPolicy": {
+            "nxos:index/getPimSsmPolicy:getPimSsmPolicy": {
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getPimSsmRange:getPimSsmRange": {
+            "nxos:index/getPimSsmRange:getPimSsmRange": {
                 "groupList1": "group_list_1",
                 "groupList2": "group_list_2",
                 "groupList3": "group_list_3",
@@ -924,20 +1713,20 @@
                 "ssmNone": "ssm_none",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getPimStaticRp:getPimStaticRp": {
+            "nxos:index/getPimStaticRp:getPimStaticRp": {
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getPimStaticRpGroupList:getPimStaticRpGroupList": {
+            "nxos:index/getPimStaticRpGroupList:getPimStaticRpGroupList": {
                 "rpAddress": "rp_address",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getPimStaticRpPolicy:getPimStaticRpPolicy": {
+            "nxos:index/getPimStaticRpPolicy:getPimStaticRpPolicy": {
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/getPimVrf:getPimVrf": {
+            "nxos:index/getPimVrf:getPimVrf": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getPortChannelInterface:getPortChannelInterface": {
+            "nxos:index/getPortChannelInterface:getPortChannelInterface": {
                 "accessVlan": "access_vlan",
                 "adminState": "admin_state",
                 "autoNegotiation": "auto_negotiation",
@@ -951,77 +1740,77 @@
                 "trunkVlans": "trunk_vlans",
                 "userConfiguredFlags": "user_configured_flags"
             },
-            "nxos:nxos/getPortChannelInterfaceMember:getPortChannelInterfaceMember": {
+            "nxos:index/getPortChannelInterfaceMember:getPortChannelInterfaceMember": {
                 "interfaceDn": "interface_dn",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getPortChannelInterfaceVrf:getPortChannelInterfaceVrf": {
+            "nxos:index/getPortChannelInterfaceVrf:getPortChannelInterfaceVrf": {
                 "interfaceId": "interface_id",
                 "vrfDn": "vrf_dn"
             },
-            "nxos:nxos/getQueuingQosPolicyMap:getQueuingQosPolicyMap": {
+            "nxos:index/getQueuingQosPolicyMap:getQueuingQosPolicyMap": {
                 "matchType": "match_type"
             },
-            "nxos:nxos/getQueuingQosPolicyMapMatchClassMap:getQueuingQosPolicyMapMatchClassMap": {
+            "nxos:index/getQueuingQosPolicyMapMatchClassMap:getQueuingQosPolicyMapMatchClassMap": {
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/getQueuingQosPolicyMapMatchClassMapPriority:getQueuingQosPolicyMapMatchClassMapPriority": {
+            "nxos:index/getQueuingQosPolicyMapMatchClassMapPriority:getQueuingQosPolicyMapMatchClassMapPriority": {
                 "classMapName": "class_map_name",
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/getQueuingQosPolicyMapMatchClassMapRemainingBandwidth:getQueuingQosPolicyMapMatchClassMapRemainingBandwidth": {
+            "nxos:index/getQueuingQosPolicyMapMatchClassMapRemainingBandwidth:getQueuingQosPolicyMapMatchClassMapRemainingBandwidth": {
                 "classMapName": "class_map_name",
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/getQueuingQosPolicySystemOutPolicyMap:getQueuingQosPolicySystemOutPolicyMap": {
+            "nxos:index/getQueuingQosPolicySystemOutPolicyMap:getQueuingQosPolicySystemOutPolicyMap": {
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/getRest:getRest": {
+            "nxos:index/getRest:getRest": {
                 "className": "class_name"
             },
-            "nxos:nxos/getRouteMapRuleEntry:getRouteMapRuleEntry": {
+            "nxos:index/getRouteMapRuleEntry:getRouteMapRuleEntry": {
                 "ruleName": "rule_name"
             },
-            "nxos:nxos/getRouteMapRuleEntryMatchRoute:getRouteMapRuleEntryMatchRoute": {
+            "nxos:index/getRouteMapRuleEntryMatchRoute:getRouteMapRuleEntryMatchRoute": {
                 "ruleName": "rule_name"
             },
-            "nxos:nxos/getRouteMapRuleEntryMatchRoutePrefixList:getRouteMapRuleEntryMatchRoutePrefixList": {
+            "nxos:index/getRouteMapRuleEntryMatchRoutePrefixList:getRouteMapRuleEntryMatchRoutePrefixList": {
                 "prefixListDn": "prefix_list_dn",
                 "ruleName": "rule_name"
             },
-            "nxos:nxos/getRouteMapRuleEntrySetRegularCommunity:getRouteMapRuleEntrySetRegularCommunity": {
+            "nxos:index/getRouteMapRuleEntrySetRegularCommunity:getRouteMapRuleEntrySetRegularCommunity": {
                 "noCommunity": "no_community",
                 "ruleName": "rule_name",
                 "setCriteria": "set_criteria"
             },
-            "nxos:nxos/getRouteMapRuleEntrySetRegularCommunityItem:getRouteMapRuleEntrySetRegularCommunityItem": {
+            "nxos:index/getRouteMapRuleEntrySetRegularCommunityItem:getRouteMapRuleEntrySetRegularCommunityItem": {
                 "ruleName": "rule_name"
             },
-            "nxos:nxos/getSpanningTreeInterface:getSpanningTreeInterface": {
+            "nxos:index/getSpanningTreeInterface:getSpanningTreeInterface": {
                 "adminState": "admin_state",
                 "bpduFilter": "bpdu_filter",
                 "bpduGuard": "bpdu_guard",
                 "interfaceId": "interface_id",
                 "linkType": "link_type"
             },
-            "nxos:nxos/getSubinterface:getSubinterface": {
+            "nxos:index/getSubinterface:getSubinterface": {
                 "adminState": "admin_state",
                 "interfaceId": "interface_id",
                 "linkLogging": "link_logging"
             },
-            "nxos:nxos/getSubinterfaceVrf:getSubinterfaceVrf": {
+            "nxos:index/getSubinterfaceVrf:getSubinterfaceVrf": {
                 "interfaceId": "interface_id",
                 "vrfDn": "vrf_dn"
             },
-            "nxos:nxos/getSviInterface:getSviInterface": {
+            "nxos:index/getSviInterface:getSviInterface": {
                 "adminState": "admin_state",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/getSviInterfaceVrf:getSviInterfaceVrf": {
+            "nxos:index/getSviInterfaceVrf:getSviInterfaceVrf": {
                 "interfaceId": "interface_id",
                 "vrfDn": "vrf_dn"
             },
-            "nxos:nxos/getVpcDomain:getVpcDomain": {
+            "nxos:index/getVpcDomain:getVpcDomain": {
                 "adminState": "admin_state",
                 "autoRecovery": "auto_recovery",
                 "autoRecoveryInterval": "auto_recovery_interval",
@@ -1042,44 +1831,44 @@
                 "systemPriority": "system_priority",
                 "virtualIp": "virtual_ip"
             },
-            "nxos:nxos/getVpcInstance:getVpcInstance": {
+            "nxos:index/getVpcInstance:getVpcInstance": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/getVpcInterface:getVpcInterface": {
+            "nxos:index/getVpcInterface:getVpcInterface": {
                 "portChannelInterfaceDn": "port_channel_interface_dn",
                 "vpcInterfaceId": "vpc_interface_id"
             },
-            "nxos:nxos/getVrfAddressFamily:getVrfAddressFamily": {
+            "nxos:index/getVrfAddressFamily:getVrfAddressFamily": {
                 "addressFamily": "address_family"
             },
-            "nxos:nxos/getVrfRouteTarget:getVrfRouteTarget": {
+            "nxos:index/getVrfRouteTarget:getVrfRouteTarget": {
                 "addressFamily": "address_family",
                 "routeTarget": "route_target",
                 "routeTargetAddressFamily": "route_target_address_family"
             },
-            "nxos:nxos/getVrfRouteTargetAddressFamily:getVrfRouteTargetAddressFamily": {
+            "nxos:index/getVrfRouteTargetAddressFamily:getVrfRouteTargetAddressFamily": {
                 "addressFamily": "address_family",
                 "routeTargetAddressFamily": "route_target_address_family"
             },
-            "nxos:nxos/getVrfRouteTargetDirection:getVrfRouteTargetDirection": {
+            "nxos:index/getVrfRouteTargetDirection:getVrfRouteTargetDirection": {
                 "addressFamily": "address_family",
                 "routeTargetAddressFamily": "route_target_address_family"
             },
-            "nxos:nxos/getVrfRouting:getVrfRouting": {
+            "nxos:index/getVrfRouting:getVrfRouting": {
                 "routeDistinguisher": "route_distinguisher"
             },
-            "nxos:nxos/hmm:Hmm": {
+            "nxos:index/hmm:Hmm": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/hmmInstance:HmmInstance": {
+            "nxos:index/hmmInstance:HmmInstance": {
                 "adminState": "admin_state",
                 "anycastMac": "anycast_mac"
             },
-            "nxos:nxos/hmmInterface:HmmInterface": {
+            "nxos:index/hmmInterface:HmmInterface": {
                 "adminState": "admin_state",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/ipv4AccessListEntry:Ipv4AccessListEntry": {
+            "nxos:index/ipv4AccessListEntry:Ipv4AccessListEntry": {
                 "destinationAddressGroup": "destination_address_group",
                 "destinationPort1": "destination_port_1",
                 "destinationPort2": "destination_port_2",
@@ -1108,37 +1897,37 @@
                 "sourcePrefixMask": "source_prefix_mask",
                 "timeRange": "time_range"
             },
-            "nxos:nxos/ipv4AccessListPolicyEgressInterface:Ipv4AccessListPolicyEgressInterface": {
+            "nxos:index/ipv4AccessListPolicyEgressInterface:Ipv4AccessListPolicyEgressInterface": {
                 "accessListName": "access_list_name",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/ipv4AccessListPolicyIngressInterface:Ipv4AccessListPolicyIngressInterface": {
+            "nxos:index/ipv4AccessListPolicyIngressInterface:Ipv4AccessListPolicyIngressInterface": {
                 "accessListName": "access_list_name",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/ipv4Interface:Ipv4Interface": {
+            "nxos:index/ipv4Interface:Ipv4Interface": {
                 "dropGlean": "drop_glean",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/ipv4InterfaceAddress:Ipv4InterfaceAddress": {
+            "nxos:index/ipv4InterfaceAddress:Ipv4InterfaceAddress": {
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/ipv4PrefixListRuleEntry:Ipv4PrefixListRuleEntry": {
+            "nxos:index/ipv4PrefixListRuleEntry:Ipv4PrefixListRuleEntry": {
                 "fromRange": "from_range",
                 "ruleName": "rule_name",
                 "toRange": "to_range"
             },
-            "nxos:nxos/ipv4StaticRoute:Ipv4StaticRoute": {
+            "nxos:index/ipv4StaticRoute:Ipv4StaticRoute": {
                 "nextHops": "next_hops",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/isis:Isis": {
+            "nxos:index/isis:Isis": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/isisInstance:IsisInstance": {
+            "nxos:index/isisInstance:IsisInstance": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/isisInterface:IsisInterface": {
+            "nxos:index/isisInterface:IsisInterface": {
                 "authenticationCheck": "authentication_check",
                 "authenticationCheckL1": "authentication_check_l1",
                 "authenticationCheckL2": "authentication_check_l2",
@@ -1166,7 +1955,7 @@
                 "priorityL1": "priority_l1",
                 "priorityL2": "priority_l2"
             },
-            "nxos:nxos/isisVrf:IsisVrf": {
+            "nxos:index/isisVrf:IsisVrf": {
                 "adminState": "admin_state",
                 "authenticationCheckL1": "authentication_check_l1",
                 "authenticationCheckL2": "authentication_check_l2",
@@ -1181,20 +1970,20 @@
                 "metricType": "metric_type",
                 "passiveDefault": "passive_default"
             },
-            "nxos:nxos/loopbackInterface:LoopbackInterface": {
+            "nxos:index/loopbackInterface:LoopbackInterface": {
                 "adminState": "admin_state",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/loopbackInterfaceVrf:LoopbackInterfaceVrf": {
+            "nxos:index/loopbackInterfaceVrf:LoopbackInterfaceVrf": {
                 "interfaceId": "interface_id",
                 "vrfDn": "vrf_dn"
             },
-            "nxos:nxos/ntpServer:NtpServer": {
+            "nxos:index/ntpServer:NtpServer": {
                 "keyId": "key_id",
                 "maxPoll": "max_poll",
                 "minPoll": "min_poll"
             },
-            "nxos:nxos/nveInterface:NveInterface": {
+            "nxos:index/nveInterface:NveInterface": {
                 "adminState": "admin_state",
                 "advertiseVirtualMac": "advertise_virtual_mac",
                 "holdDownTime": "hold_down_time",
@@ -1207,22 +1996,22 @@
                 "suppressArp": "suppress_arp",
                 "suppressMacRoute": "suppress_mac_route"
             },
-            "nxos:nxos/nveVni:NveVni": {
+            "nxos:index/nveVni:NveVni": {
                 "associateVrf": "associate_vrf",
                 "multicastGroup": "multicast_group",
                 "multisiteIngressReplication": "multisite_ingress_replication",
                 "suppressArp": "suppress_arp"
             },
-            "nxos:nxos/ospf:Ospf": {
+            "nxos:index/ospf:Ospf": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/ospfArea:OspfArea": {
+            "nxos:index/ospfArea:OspfArea": {
                 "areaId": "area_id",
                 "authenticationType": "authentication_type",
                 "instanceName": "instance_name",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/ospfAuthentication:OspfAuthentication": {
+            "nxos:index/ospfAuthentication:OspfAuthentication": {
                 "instanceName": "instance_name",
                 "interfaceId": "interface_id",
                 "keyId": "key_id",
@@ -1231,10 +2020,10 @@
                 "md5KeySecureMode": "md5_key_secure_mode",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/ospfInstance:OspfInstance": {
+            "nxos:index/ospfInstance:OspfInstance": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/ospfInterface:OspfInterface": {
+            "nxos:index/ospfInterface:OspfInterface": {
                 "advertiseSecondaries": "advertise_secondaries",
                 "deadInterval": "dead_interval",
                 "helloInterval": "hello_interval",
@@ -1243,14 +2032,14 @@
                 "networkType": "network_type",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/ospfVrf:OspfVrf": {
+            "nxos:index/ospfVrf:OspfVrf": {
                 "adminState": "admin_state",
                 "bandwidthReference": "bandwidth_reference",
                 "banwidthReferenceUnit": "banwidth_reference_unit",
                 "instanceName": "instance_name",
                 "routerId": "router_id"
             },
-            "nxos:nxos/physicalInterface:PhysicalInterface": {
+            "nxos:index/physicalInterface:PhysicalInterface": {
                 "accessVlan": "access_vlan",
                 "adminState": "admin_state",
                 "autoNegotiation": "auto_negotiation",
@@ -1265,36 +2054,36 @@
                 "uniDirectionalEthernet": "uni_directional_ethernet",
                 "userConfiguredFlags": "user_configured_flags"
             },
-            "nxos:nxos/physicalInterfaceVrf:PhysicalInterfaceVrf": {
+            "nxos:index/physicalInterfaceVrf:PhysicalInterfaceVrf": {
                 "interfaceId": "interface_id",
                 "vrfDn": "vrf_dn"
             },
-            "nxos:nxos/pim:Pim": {
+            "nxos:index/pim:Pim": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/pimAnycastRp:PimAnycastRp": {
+            "nxos:index/pimAnycastRp:PimAnycastRp": {
                 "localInterface": "local_interface",
                 "sourceInterface": "source_interface",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/pimAnycastRpPeer:PimAnycastRpPeer": {
+            "nxos:index/pimAnycastRpPeer:PimAnycastRpPeer": {
                 "rpSetAddress": "rp_set_address",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/pimInstance:PimInstance": {
+            "nxos:index/pimInstance:PimInstance": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/pimInterface:PimInterface": {
+            "nxos:index/pimInterface:PimInterface": {
                 "adminState": "admin_state",
                 "drPriority": "dr_priority",
                 "interfaceId": "interface_id",
                 "sparseMode": "sparse_mode",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/pimSsmPolicy:PimSsmPolicy": {
+            "nxos:index/pimSsmPolicy:PimSsmPolicy": {
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/pimSsmRange:PimSsmRange": {
+            "nxos:index/pimSsmRange:PimSsmRange": {
                 "groupList1": "group_list_1",
                 "groupList2": "group_list_2",
                 "groupList3": "group_list_3",
@@ -1304,20 +2093,20 @@
                 "ssmNone": "ssm_none",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/pimStaticRp:PimStaticRp": {
+            "nxos:index/pimStaticRp:PimStaticRp": {
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/pimStaticRpGroupList:PimStaticRpGroupList": {
+            "nxos:index/pimStaticRpGroupList:PimStaticRpGroupList": {
                 "rpAddress": "rp_address",
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/pimStaticRpPolicy:PimStaticRpPolicy": {
+            "nxos:index/pimStaticRpPolicy:PimStaticRpPolicy": {
                 "vrfName": "vrf_name"
             },
-            "nxos:nxos/pimVrf:PimVrf": {
+            "nxos:index/pimVrf:PimVrf": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/portChannelInterface:PortChannelInterface": {
+            "nxos:index/portChannelInterface:PortChannelInterface": {
                 "accessVlan": "access_vlan",
                 "adminState": "admin_state",
                 "autoNegotiation": "auto_negotiation",
@@ -1331,78 +2120,78 @@
                 "trunkVlans": "trunk_vlans",
                 "userConfiguredFlags": "user_configured_flags"
             },
-            "nxos:nxos/portChannelInterfaceMember:PortChannelInterfaceMember": {
+            "nxos:index/portChannelInterfaceMember:PortChannelInterfaceMember": {
                 "interfaceDn": "interface_dn",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/portChannelInterfaceVrf:PortChannelInterfaceVrf": {
+            "nxos:index/portChannelInterfaceVrf:PortChannelInterfaceVrf": {
                 "interfaceId": "interface_id",
                 "vrfDn": "vrf_dn"
             },
-            "nxos:nxos/queuingQosPolicyMap:QueuingQosPolicyMap": {
+            "nxos:index/queuingQosPolicyMap:QueuingQosPolicyMap": {
                 "matchType": "match_type"
             },
-            "nxos:nxos/queuingQosPolicyMapMatchClassMap:QueuingQosPolicyMapMatchClassMap": {
+            "nxos:index/queuingQosPolicyMapMatchClassMap:QueuingQosPolicyMapMatchClassMap": {
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/queuingQosPolicyMapMatchClassMapPriority:QueuingQosPolicyMapMatchClassMapPriority": {
+            "nxos:index/queuingQosPolicyMapMatchClassMapPriority:QueuingQosPolicyMapMatchClassMapPriority": {
                 "classMapName": "class_map_name",
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/queuingQosPolicyMapMatchClassMapRemainingBandwidth:QueuingQosPolicyMapMatchClassMapRemainingBandwidth": {
+            "nxos:index/queuingQosPolicyMapMatchClassMapRemainingBandwidth:QueuingQosPolicyMapMatchClassMapRemainingBandwidth": {
                 "classMapName": "class_map_name",
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/queuingQosPolicySystemOutPolicyMap:QueuingQosPolicySystemOutPolicyMap": {
+            "nxos:index/queuingQosPolicySystemOutPolicyMap:QueuingQosPolicySystemOutPolicyMap": {
                 "policyMapName": "policy_map_name"
             },
-            "nxos:nxos/rest:Rest": {
+            "nxos:index/rest:Rest": {
                 "childrens": "children",
                 "className": "class_name"
             },
-            "nxos:nxos/routeMapRuleEntry:RouteMapRuleEntry": {
+            "nxos:index/routeMapRuleEntry:RouteMapRuleEntry": {
                 "ruleName": "rule_name"
             },
-            "nxos:nxos/routeMapRuleEntryMatchRoute:RouteMapRuleEntryMatchRoute": {
+            "nxos:index/routeMapRuleEntryMatchRoute:RouteMapRuleEntryMatchRoute": {
                 "ruleName": "rule_name"
             },
-            "nxos:nxos/routeMapRuleEntryMatchRoutePrefixList:RouteMapRuleEntryMatchRoutePrefixList": {
+            "nxos:index/routeMapRuleEntryMatchRoutePrefixList:RouteMapRuleEntryMatchRoutePrefixList": {
                 "prefixListDn": "prefix_list_dn",
                 "ruleName": "rule_name"
             },
-            "nxos:nxos/routeMapRuleEntrySetRegularCommunity:RouteMapRuleEntrySetRegularCommunity": {
+            "nxos:index/routeMapRuleEntrySetRegularCommunity:RouteMapRuleEntrySetRegularCommunity": {
                 "noCommunity": "no_community",
                 "ruleName": "rule_name",
                 "setCriteria": "set_criteria"
             },
-            "nxos:nxos/routeMapRuleEntrySetRegularCommunityItem:RouteMapRuleEntrySetRegularCommunityItem": {
+            "nxos:index/routeMapRuleEntrySetRegularCommunityItem:RouteMapRuleEntrySetRegularCommunityItem": {
                 "ruleName": "rule_name"
             },
-            "nxos:nxos/spanningTreeInterface:SpanningTreeInterface": {
+            "nxos:index/spanningTreeInterface:SpanningTreeInterface": {
                 "adminState": "admin_state",
                 "bpduFilter": "bpdu_filter",
                 "bpduGuard": "bpdu_guard",
                 "interfaceId": "interface_id",
                 "linkType": "link_type"
             },
-            "nxos:nxos/subinterface:Subinterface": {
+            "nxos:index/subinterface:Subinterface": {
                 "adminState": "admin_state",
                 "interfaceId": "interface_id",
                 "linkLogging": "link_logging"
             },
-            "nxos:nxos/subinterfaceVrf:SubinterfaceVrf": {
+            "nxos:index/subinterfaceVrf:SubinterfaceVrf": {
                 "interfaceId": "interface_id",
                 "vrfDn": "vrf_dn"
             },
-            "nxos:nxos/sviInterface:SviInterface": {
+            "nxos:index/sviInterface:SviInterface": {
                 "adminState": "admin_state",
                 "interfaceId": "interface_id"
             },
-            "nxos:nxos/sviInterfaceVrf:SviInterfaceVrf": {
+            "nxos:index/sviInterfaceVrf:SviInterfaceVrf": {
                 "interfaceId": "interface_id",
                 "vrfDn": "vrf_dn"
             },
-            "nxos:nxos/vpcDomain:VpcDomain": {
+            "nxos:index/vpcDomain:VpcDomain": {
                 "adminState": "admin_state",
                 "autoRecovery": "auto_recovery",
                 "autoRecoveryInterval": "auto_recovery_interval",
@@ -1423,30 +2212,30 @@
                 "systemPriority": "system_priority",
                 "virtualIp": "virtual_ip"
             },
-            "nxos:nxos/vpcInstance:VpcInstance": {
+            "nxos:index/vpcInstance:VpcInstance": {
                 "adminState": "admin_state"
             },
-            "nxos:nxos/vpcInterface:VpcInterface": {
+            "nxos:index/vpcInterface:VpcInterface": {
                 "portChannelInterfaceDn": "port_channel_interface_dn",
                 "vpcInterfaceId": "vpc_interface_id"
             },
-            "nxos:nxos/vrfAddressFamily:VrfAddressFamily": {
+            "nxos:index/vrfAddressFamily:VrfAddressFamily": {
                 "addressFamily": "address_family"
             },
-            "nxos:nxos/vrfRouteTarget:VrfRouteTarget": {
+            "nxos:index/vrfRouteTarget:VrfRouteTarget": {
                 "addressFamily": "address_family",
                 "routeTarget": "route_target",
                 "routeTargetAddressFamily": "route_target_address_family"
             },
-            "nxos:nxos/vrfRouteTargetAddressFamily:VrfRouteTargetAddressFamily": {
+            "nxos:index/vrfRouteTargetAddressFamily:VrfRouteTargetAddressFamily": {
                 "addressFamily": "address_family",
                 "routeTargetAddressFamily": "route_target_address_family"
             },
-            "nxos:nxos/vrfRouteTargetDirection:VrfRouteTargetDirection": {
+            "nxos:index/vrfRouteTargetDirection:VrfRouteTargetDirection": {
                 "addressFamily": "address_family",
                 "routeTargetAddressFamily": "route_target_address_family"
             },
-            "nxos:nxos/vrfRouting:VrfRouting": {
+            "nxos:index/vrfRouting:VrfRouting": {
                 "routeDistinguisher": "route_distinguisher"
             }
         }
