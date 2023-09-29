@@ -20,7 +20,7 @@ def readme():
 setup(name='lbrlabs_pulumi_nxos',
       python_requires='>=3.7',
       version=VERSION,
-      description="A Pulumi package for creating and managing Cisco IOS XE Devices.",
+      description="A Pulumi package for creating and managing Cisco nxos XE Devices.",
       long_description=readme(),
       long_description_content_type='text/markdown',
       keywords='pulumi nxos category/utility',

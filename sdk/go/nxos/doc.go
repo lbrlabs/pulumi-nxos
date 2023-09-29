@@ -1,2 +1,2 @@
-// A Pulumi package for creating and managing Cisco IOS XE Devices.
+// A Pulumi package for creating and managing Cisco nxos XE Devices.
 package nxos

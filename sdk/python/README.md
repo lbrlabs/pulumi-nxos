@@ -1,7 +1,7 @@
 
-# Cisco IOS XE Resource Provider
+# Cisco NX OS Resource Provider
 
-The Cisco IOXE resource provider for Pulumi lets you creating resources in the [Cisco IOS XE](https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-xe/index.html) API. To use
+The Cisco NX OS resource provider for Pulumi lets you creating resources in the [Cisco NX-OS XE](https://www.cisco.com/c/en/us/products/ios-nx-os-software/nx-os/index.html) API. To use
 this package, please [install the Pulumi CLI first](https://pulumi.com/).
 
 ## Installing

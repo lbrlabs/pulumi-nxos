@@ -34,7 +34,7 @@ func Provider() tfbridge.ProviderInfo {
 		PluginDownloadURL: "github://api.github.com/lbrlabs",
 		Version:           version.Version,
 		MetadataInfo:      tfbridge.NewProviderMetadata(metadata),
-		Description:       "A Pulumi package for creating and managing Cisco IOS XE Devices.",
+		Description:       "A Pulumi package for creating and managing Cisco nxos XE Devices.",
 		Keywords:          []string{"pulumi", "nxos", "category/utility"},
 		License:           "Apache-2.0",
 		Homepage:          "https://www.pulumi.com",

@@ -4,7 +4,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>lbrlabs</Authors>
     <Company>lbrlabs</Company>
-    <Description>A Pulumi package for creating and managing Cisco IOS XE Devices.</Description>
+    <Description>A Pulumi package for creating and managing Cisco nxos XE Devices.</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://www.pulumi.com</PackageProjectUrl>
     <RepositoryUrl>https://github.com/lbrlabs/pulumi-nxos</RepositoryUrl>

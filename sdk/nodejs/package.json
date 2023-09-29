@@ -1,7 +1,7 @@
 {
     "name": "@lbrlabs/pulumi-nxos",
     "version": "${VERSION}",
-    "description": "A Pulumi package for creating and managing Cisco IOS XE Devices.",
+    "description": "A Pulumi package for creating and managing Cisco nxos XE Devices.",
     "keywords": [
         "pulumi",
         "nxos",
